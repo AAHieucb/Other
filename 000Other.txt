@@ -1,0 +1,169 @@
+***Các kiến thức khác:
+
+
+# Phân biệt công ty Outsource và Product:
+Công ty Outsourcing nhận dự án làm và bàn giao sản phẩm. Còn công ty Product làm sản phẩm cho chính họ.
+VD: Công ty A thuê 1 bên công ty outsourcing code cho 1 tính năng mới của họ; Công ty B là 1 công ty Product vì họ có dev tự code tính năng của chính họ. VD công ty Momo có 1 đội dev từng chức năng cho cái ví thì Momo là công ty product
+Start up na ná Product nhưng nó là mới còn Product thì sp cũng có sẵn r và code thêm chức năng vào
+Outsourcing: dự án to, đông người, chuẩn có chứng chỉ, quy trình chuẩn, nhiều công nghệ, tranh giành dự án, cạnh tranh cao, mục tiêu sản phẩm dành cho ai k rõ ràng, yêu cầu vô lý về chức năng vô dụng cũng phải thực hiện.
+Product: quy mô nhỏ hơn, công ty nắm giữ sản phẩm nên dev hiểu được sản phẩm dành cho ai và biết chức năng này có ích gì trong thực tế, có thể thảo luận với cấp trên về chức năng này có nên làm k. VD trava là công ty product. Làm product dễ thở hơn trong khi outsourcing chậm bị chửi sấp mặt. Quy trình có thể k chuẩn lắm VD code frontend có thể chế ra design ở 1 số chỗ k cần chuẩn nhưng outsource mà sai là ăn cứt. Dự án lớn thì họ vẫn có quy trình chuẩn rõ ràng
+
+
+
+# Vị trí của ta trong thế giới lập trình về độ phổ biến:
+Lập trình web > lập trình di động > lập trình nhúng - iot
+Lập trình di động ít dev hơn lập trình web nên lương cao hơn 1 chút, còn lập trình nhúng - iot thì ít hơn hẳn nên tài liệu ít và học cũng khó liên quan đến thiết kế mạch lập trình trên các con chip nhỏ. Đa phần tuyển dụng toàn web với web. 1 người làm backend có thể xử lý dữ liệu cả cho mobile và web, k khác nhau là mấy, chỉ là 2 nền tảng này front end rất khác biệt
+Còn có các mảng ít code hơn nhưng nặng kỹ thuật như: DevOps chuyên deploy các sản phẩm. Có công ty xài server riêng thì công quản lý và chi phí lắp đặt cao, thay vào đó họ dùng cloud của amazon, google,.. có sẵn vài nghìn con server cho thuê thì nếu đủ tốt có thể thấy chức năng cung cấp k khác gì tự có server riêng chỉ bị nhược điểm duy nhất là phụ thuộc vào các công ty lớn khác mà thôi. DevOps sẽ phải nắm vững tất cả và các thứ như Azure, GCP, AWS, Docker, Kubernetes, ELK Stack,..; Data engineer chuyên xử lý dữ liệu quyết định đến chiến lược của công ty
+Còn các mảng ít code hơn nữa như: Tester, PM(quản lý dự án), BA(cầu nối với khách hàng),.. Đôi khi BA và PM là 1 sẽ tiện hơn
+Các mảng học cực nhiều lý thuyết và code khá nhiều như DM, ML, AI,..
+
+
+
+# POC(Proof of Concept)
+1 ứng dụng chứng minh tính khả thi của 1 ý tưởng or 1 method nào đó=> giúp cho việc chứng minh 1 ý tưởng gì là đúng, giúp ta đi đúng vào 1 cái hướng có tính thực tiễn, khả thi chứ kp là mãi mãi chỉ là lời nói k thể áp dụng thực tiễn, giúp tăng tính thuyết phục về ý tưởng.
+Ví dụ ta nói proof of concept của cái gì tức là ta đang đưa ra những lý lẽ của nó và nó áp dụng trong thực tế khả thi ntn
+
+
+
+# Các chức vụ
+SA: System administrator - quản trị viên hệ thống
+CTO: Chief technology officer - giám đốc công nghệ, là người quản lý cấp cao
+PM: Project manager - quản lý dự án
+
+BrSE(bridge system engineering) là kỹ sư cầu nối, kết nối team dev với khách hàng. Phải nắm được từ đầu tới đuôi dự án để ứng phó kịp thời. Họ liên hệ, phân tích yêu cầu, trực tiếp code, demo sản phẩm, báo cáo tiến độ, thương lượng. 
+PM bình thường là người phân chia, giám sát công việc từng người thì BrSE kiêm vai trò PM chỉ là giám sát chung dự án và báo cáo tiến độ cho khách mà thôi
+
+
+
+# MFA (Multi-factor authentication) 
+Xác thực đa yếu tố là có thêm 1 lớp bảo mật nữa như nhận mã xác thực qua điện thoại or vân tay,..
+
+
+
+# Dial up VPN
+Cho phép user connect vào internet bằng POTS truyền thống or đường dây điện thoại ISDN. Virtual private network protocol giúp bảo mật các connection kết nối remote. Nch là 1 kiểu vào mạng cũng như truyền tin an toàn.
+
+
+
+# Các mô hình web stack
+MEAN: MongoDB, ExpressJS, AngularJS, NodeJS
+MERN: MongoDB, Express, React, NodeJS
+JAM: JS, API, Markup
+WAMP: Windows, Apache, MySQL, PHP => kbh dùng
+LAMP: Linux, Apache, MySQL, PHP => kbh dùng
+
+
+
+# Microservices
+Là mô hình phần mềm, 1 ứng dụng khổng lồ chia ra thành càng nhiều mô đun nhỏ càng tốt, thay vì làm nguyên khối. Các hãng lớn như netflix đều dùng kiểu này, các mô đun có thể được viết bằng nhiều ngôn ngữ khác nhau và tương tác thông qua API. Vì mỗi mô đun chỉ lo các tính năng riêng nhỏ nên code đơn giản, nhưng phải quản lý các microservice tương tác với nhau hợp lý tránh rắc rối.
+
+
+
+# Các series hay nhưng k thực tiễn
+-> Discovering hidden API: là hướng dẫn tìm ra các API ẩn trong website, có thể dùng nó để hack mở khóa các page ẩn thông tin hay trả phí để xem thông tin
+series: https://www.youtube.com/watch?v=twuhocLtGCg&list=PLyb_C2HpOQSCAi67ZF0w-6CvCvZs_OXAB&index=1
+
+
+
+# Web programming
+-> WWW or W3 được phát triển bởi Tim Berners-Lee năm 1989
+
+XHTML: Extensible HTML
+
+-> Tiêu chuẩn đặt URI là từ RFC 3986: 
+http://www.google.com/search?q=test#prs
+scheme authority      path   query  fragment
+
+-> IP address
+1.1.1.1: IP address của cloud flare. Nó là ip của 1 public DNS resolver của công ty Cloudflare. Nó cung dịch vụ DNS nhanh và an toàn để tăng tốc độ truy cập mạng. Resolver đó là 1 program or 1 server thực hiện convert human-readble ip thành dạng số mà máy tính hiểu
+8.8.8.8: là ip address của 1 trong các public DNS server của google.
+=> URI hay DNS đều do các tổ chức lớn trên thế giới đặt ra mà ta phải tuân theo
+
+IP address ta thấy được trong lệnh ipconfig là private IP address mà các máy trong cùng mạng có thể dùng nó để tương tác với ta. IP address ta thấy trong trang https://whatismyipaddress.com/ là public IP address mà máy dùng để tương tác với các máy bên ngoài, tùy vào config mà nó bị thay đổi. 
+Điều này k liên quan đến static ip address và dynamic ip address. Static là gán thủ công và cố định. Dynamic là gán động từ pool thông qua giao thức DHCP 1 cách tự động
+
+-> Mở setting wifi cũng chỉ ra private ip address
+Để xem public ip address trên máy ta phải cho nó đi qua resolver bằng lệnh chạy:
+nslookup myip.opendns.com resolver1.opendns.com
+
+
+
+# Streaming server
+Ngoài server socket hay server http bth, ta còn có streaming server là 1 loại server cung các continuous data như video, audio. 
+Khi xem video từ youtube, ta k tương tác với server http mà tương tác với 1 streaming server. Nó load video từ từ và gửi cho client trong khi duy trì connection chứ k load 1 phát tất cả. Khi nhúng video thg ta k cần xử lý thủ công phần đó.
+
+-> Cách biến gg drive thành streaming server phim
+Các web làm phim phải bỏ ra lượng tiền lớn để thuê streaming server cho video. Ta có thể tận dụng gg drive làm streaming server lưu phim.
+
+Đầu tiên khi mở 1 video trong gg drive, nó gửi request https://drive.google.com/get_video_info?docid=<...>&drive_originator_app=<...> với từng video. Mỗi video có 1 id riêng. Sau khi tải vid lên ta chỉ cần lấy id đó là được
+Thực tế có nhiều đường link để get_video_info: VD https://mail.google.com/e/get_video_info  và  https://drive.google.com/e/get_video_info  và  https://docs.google.com/e/get_video_info
+Nhận kết quả trả về cho vào nodejs thư viện query-string để parse data lấy ra trường fmt_stream_map. Trường này định nghĩa ra các url tương ứng với chất lượng video khác nhau. VD 18 là MP4 360p, 22 là MP4 720p.
+Mở url lên là xem được phim. Nếu mở local ở máy ta sau khi đã đăng nhập thì được nhưng mở ở máy người khác thì không:
+- Để qua mặt check ip của gg: Ta phải lấy 2 đường link ipv4 và ipv6, check khi người dùng xài IPv4 thì đưa link ipv6 và ngược lại vì gg drive k check ip khi type khác nhau.
+- Tuy nhiên để link đó hoạt động thì cần có cookie trường DRIVE_STREAM khi truy cập url. Thậm chi có thể phải redirect qua nhiều url thì mới có được link chạy được luôn, ở mỗi url redirect lại phải thêm cookie vào.
+
+=> Chính vì cookie nên hiện tại k thể dùng gg drive làm streaming server được nữa. Thực tế ta vẫn có thể làm bằng puppeter kiểu: client gửi request video tới server -> server search database ra id -> get_video_info lấy url -> dùng puppetter truy cập gg drive của ta để lấy cookie -> server dùng cookie liên tục truy cập streaming server, để kệ nó redirect tới page cuối cùng thì lấy ra url cuối -> gửi lại url đó và cookie cho client -> client xem được video
+=> Cx vì id của video nên các hãng thấy phim lậu có thể report dựa vào id đó để gg drive chặn lại.  
+
+-> Để thêm Cookie vào request, ta thêm vào headers. VD thêm 2 trường vào cookie thì headers sẽ là:
+Cookie: Key1=Value1;Key2=Value2
+
+
+
+# Tính năng của VSC
+-> Forwarding port:
+Mục ports cạnh terminal, hoặc gõ npx serve sẽ xuất hiện
+Login vào github, nó tận dùng DevTunnel để forwarding port local ra ngoài internet nhanh
+=> Thay thế ngrok
+
+-> Cách search trong node_modules bằng VSC
+Vào user settings tìm search exclude: xóa **/node_modules đi
+
+Nếu chỉ tìm node_modules theo tên file thì nên dùng extension Find in node_modules
+
+-> https://www.xda-developers.com/how-use-gpu-visual-studio-code/
+Dùng GPU cho VSC giúp tốc độ của VSC tăng cao đặc biệt khi liên quan đến các tác vụ render
+
+-> URL tổng hợp phím tắt của VSC: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+-> 
+CTRL + T => search biến và hàm trong code
+CTRL + D => multiple select
+CTRL + SHIFT + L => multiple select all
+CTRL + B 
+
+
+
+# Học bằng ánh xạ
+-> 1 tool thao tác DB mới chỉ cần biết tối thiểu các kỹ thuật:
+Cách connect vào DB. Mỗi query là 1 connection hay connect 1 lần và dùng mọi lúc. Có thể dùng connectionPool không. Xử lý số lần reconnectionTries và reconnectInterval, lấy trạng thái connection hiện tại. Setup debug thông tin db nếu có. Cách setup khi connect nhiều hơn 1 database
+Cách query get, update db cơ bản theo pattern tốt nhất. Cách dùng generic nếu có khi nhiều db có các hàm như nhau (getbyid, getall, deletebyid, updatebyid,...). Lấy 1 giá trị hay lấy 1 object hay lấy 1 list object có khác nhau. Parameterized chống sql injection. 
+Cách thực hiện transaction, gom nhiều update vào 1 transaction, cách rollback khi lỗi. Các hàm atomic có sẵn
+Dùng lazy query tới DB bằng tool đó.
+Các kỹ năng nâng cao hơn: Cách update database kiểu migration, alter table như bỏ 1 trường hay thêm 1 trường mới mà vẫn migrate đủ data cũ, update theo version k bị update trùng version cũ; đánh index; cascade delete, cascade update; replica database và đồng bộ giữa các db; Backup database
+
+-> 1 ngôn ngữ mới: Ánh xạ như JS, C# nhanh
+
+-> 1 server:
+//!!!!!!!
+Tương tự 1 framework frontend, message queue với các cái đã biết
+
+
+
+# Other:
+-> Web service nó như 1 loại riêng của API chỉ dùng cho web. Nó dùng giao thức http là phổ biến nhất và 3 chuẩn chính là SOAP, REST và XML-RPC làm phương tiện giao tiếp. API có thể dùng bất cứ phương tiện giao tiếp nào để bắt đầu tương tác giữa các ứng dụng. VD: các cuộc gọi hệ thống bởi kernel linux API.
+
+-> Liệu có code được 1 đoạn mã call api từ remote server bằng C thuần hay dựng 1 web server với nó, k dùng thư viện. Điều này là có thể, bên trong hệ điều hành luôn có module built-in giúp thao tác với network. Nếu lúc nào cũng dựa vào thư viện thì làm sao máy tính connect được với wifi hay lấy các thông số với thời gian cũng như chạy lệnh ping chẳng hạn. Các package hay thư viện http ta sử dụng ở tầng thấp nhất của nó chính là dùng các module built-in của hệ điều hành mà thôi. Do đó trong C nếu có thể thao tác với phần cứng thì có thể trigger các module này để thao tác với network.
+
+-> Fintech: là finance và technology, công nghệ tài chính. Là việc sáng tạo công nghệ ứng dụng trong các dịch vụ tài chính. Từ này xuất hiện khi IT dần xâm lấn vào các hệ thống tiền tệ.
+
+-> So sánh về memory giữa các ngôn ngữ (k xét về tốc độ chạy task):
+Rust tokio vẫn là ngôn ngữ tốn ít memory nhất so với mọi ngôn ngữ khác
+NodeJS tốn ít memory hơn C# khi có 100 ngàn task đồng thời nhưng khi lên mức quá nhiều là 1 triệu task thì C# bắt đầu tốn ít hơn NodeJS. 
+Go thì tốn memory ít khi chạy ít task nhưng số lượng task đồng thời tăng nhanh sẽ khiến nó tốn lượng memory tăng vọt. Python cũng vậy.
+
+-> SDK là toàn bộ công cụ, API là cái bên trong mà dev sử dụng
+
+-> Prompt engineer là 1 từ chỉ nghề của những người tối ưu hóa input cho AI chạy để có đầu ra tốt hơn
+
+
