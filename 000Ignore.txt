@@ -58,7 +58,6 @@ Kết hợp với Typescript, nó typesafe và nếu ta đổi 1 trường trong
 Tính năng của nó là database được lưu ở edge, phân tán. Nó được thiết kế để giảm trễ cho truy vấn từ bất kỳ nơi nào trên thế giới. Đó gọi là các edge functions được cung cấp bởi các nền tảng đám mây như Vercel, CloudFlare bằng cách lấy data ở gần hơn về mặt địa lý 
 => Cơ chế hoạt động giống như Edge Computing là 1 mô hình tính toán phân tán cho phép các thiết bị ở xa xử lý dữ liệu gần với nơi dữ liệu được tạo ra. Nó là 1 từ chung nhưng mô hình này có thể kết hợp với các nền tảng đám mây để triển khai các ứng dụng ở cạnh (edge) mạng.
 
--> 
 
 
 
