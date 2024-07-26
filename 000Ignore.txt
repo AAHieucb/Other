@@ -1,80 +1,64 @@
 # Ignore
 
--> Winform:
-Winform là free opensource class lib là 1 phần của Microsoft .NET cung cấp nền tảng viết client app giao diện người dùng cho desktop, laptop và tablet
+-> Winform
+Winform là 1 phần của .NET Framework cung hỗ trợ phát triển app giao diện người dùng cho desktop, laptop và tablet.
 
--> Tạo autobot
-Trong các fanpage trên facebook, telegram, discord việc tạo bot là kỹ thuật quan trọng nhưng kp là teamdev làm. VD trong trang web của ta, ta cần tạo 1 conbot trả lời tự động hoặc khi trả lời sẽ tự chuyển đến facebook để hỏi bot cũng là kỹ thuật hay. Có tool free của GG cho phép tạo bot
+-> Dialogflow
+Nền tảng giúp tạo chatbot trả lời tự động cho các ứng dụng như facebook, telegram, discord 
 
 -> Flutter
 Flutter phù hợp với các ứng dụng focus về animation, layout phức tạp. React Native cũng cross-platform nhưng animation làm vất vả hơn, dù hiện tại đã có ThreeJS khiến mảng animation của React trở nên cực kỳ mạnh. 
-Flutter back bởi GG dùng JS, còn RN back bởi Facebook dùng Dart. 
-Flutter xây UX hiệu năng rất cao, giao tiếp gần như TT với native.
-
--> Hook và lập trình win32:
-Hook là 1 cơ chế dùng để chắn ngang các lời gọi hàm, sự kiện trước khi nó đến một ứng dụng. Từ đó có thể sửa đổi theo ý ta, gia tăng hành vi, thêm chức năng or đổi chức năng của ứng dụng. Lập trình hook có thể tùy chỉnh điều này. Nó là 1 kỹ thuật trong lập trình win32
-Win32 là viết tắt cho cụm từ Windows 32-bit, Win32 API cung cấp cho ta một số lượng hàm, thủ tục nhất định để ta dễ dàng tạo ra một chương trình window or window SDK theo ý muốn
-
--> Autocad:
-Phần mêm vẽ kỹ thuật bằng đồ họa vector trong kiến trúc, có thể vẽ cấu trúc 3d tòa nhà hay các thứ
-
--> WebGL:
-Có thể sẽ không bao giờ học vì nó giúp code front end nhưng ở tầng level quá thấp nên rất phức tạp, không đủ thời gian. Nó là thứ giúp tương tác với GPU để render đồ họa cao, bao gồm 3D model và các hiệu ứng cực đẹp. K thiếu series dạy.
-
--> PHP:
-Personal Home Page được đổi tên thành Hypertext Preprocessor là ngôn ngữ lập trình kịch bản(scripting language) dùng phổ biến cho các ứng dụng web chạy trên máy chủ (SSR), tức có thể dùng nó từ phía server để sinh ra mã HTML trên client. 
-PHP chiếm đa số trong các website SSR, là 1 trong những ngôn ngữ web fullstack phổ biến nhất. Hiện nay rất phổ biến việc sử dụng mã nguồn mở nhúng vào HTML nhờ dùng <?php?> khi áp dụng tối ưu hóa cho các ứng dụng web mang hiệu quả cao, nhanh tiện ít lỗi. 
-VD: WordPress, Youtube, Wikipedia hay Facebook dùng PHP. Các website sinh ra từ WordPress cũng dùng PHP.
-Do chạy trên server nên cần 1 server ảo để biên dịch lệnh, có nhiều phần mềm như XAMPP, Vertigo giúp tạo server ảo. VD: Vertigo giúp tạo server ảo biên dịch mã PHP, quản lý MySQL, cấu hình domain ảo ip các thứ.
---> Laravel là 1 framework của PHP làm web phổ biến nhất theo mẫu MVC, mã nguồn mở, free. Code được giảm thiểu nhưng vẫn đạt tiêu chuẩn giúp tiết kiệm tg. Nói đến PHP thg nói đến kèm với Laravel.
-
--> Angular, Vue: Các framework JS sau này chỉ học nếu thực sự có nhu cầu công ty yêu cầu dùng
-
--> Python: thường dùng cho AI, k học.
-
--> Htmx: 1 thư viện thay đổi cách code frontend nhưng điểm lợi lại k nhiều nên chắc éo bh dùng
-Ta có thể thêm các thuộc tính ngay trong tag htmx thực hiện actions mà k cần code JS luôn. Kích thước nhẹ hơn React.
-Htmx k chia component như React nên khó khăn trong việc tái sử dụng
-Htmx ban đầu cũng là SSR gửi đến trình duyệt, rồi nó dùng CSR để thay đổi html bằng JS được tích hợp ngay trong tag. Nó k cần quản lý tạng thái các thứ, k cần dùng webpack
-
--> Turso: database nosql có thể xử lý lượng lớn data hiệu quả, dễ mở rộng
-Tính năng của nó là database được lưu ở edge, phân tán, dựa trên libSQL (1 nhánh mã nguồn mở của SQLite). 
-Nó được thiết kế để giảm trễ cho truy vấn từ bất kỳ nơi nào trên thế giới. Đó gọi là các edge functions được cung cấp bởi các nền tảng đám mây như Vercel, CloudFlare bằng cách lấy data ở gần hơn về mặt địa lý.
-Nó chỉ hỗ trợ các kiểu cơ bản như số chuỗi, ngày tháng, blob
-
-Cơ chế hoạt động giống như Edge computing là 1 mô hình tính toán phân tán cho phép các thiết bị ở xa xử lý dữ liệu gần với nơi dữ liệu được tạo ra. Nó là 1 từ chung nhưng mô hình này có thể kết hợp với các nền tảng đám mây để triển khai các ứng dụng ở cạnh (edge) mạng.
-
--> Phaser: Là 1 framework HTML5 để làm game trên web. Nó dùng Pixi.js render trên WebGL và Canvas. Hỗ trợ cả mobile và desktop. 
-Điều đb là game phát triển bởi Phaser có thể dễ dạng biên thành ứng dụng cho iOS và Android.
-Code rất dễ với JS nhưng ta k làm game nên bỏ
+Flutter back bởi GG dùng JS, còn RN back bởi Facebook dùng Dart.
 
 -> Ionic Framework: 1 framework phát triển ứng dụng mobile đa nền tảng. Giống React Native
 
+-> Hook và lập trình win32
+Hook là 1 cơ chế dùng để chắn ngang các lời gọi hàm, sự kiện trước khi nó đến một ứng dụng. Từ đó có thể sửa đổi theo ý ta, như thêm or đổi chức năng của ứng dụng. Lập trình hook có thể tùy chỉnh điều này. Nó là 1 kỹ thuật trong lập trình win32
+Win32 là viết tắt cho cụm từ Windows 32-bit, Win32 API cung cấp cho ta một số lượng hàm, thủ tục nhất định để ta dễ dàng tạo ra một chương trình window theo ý muốn
+
+-> Autocad
+Phần mêm vẽ kỹ thuật bằng đồ họa vector trong kiến trúc, có thể vẽ cấu trúc 3d tòa nhà hay các thứ
+
+-> WebGL
+Có thể sẽ không bao giờ đụng vì nó giúp code front end nhưng ở tầng level quá thấp nên rất phức tạp. Nó là thứ giúp tương tác với GPU để render đồ họa cao, bao gồm 3D model và các hiệu ứng cực đẹp.
+
 -> WebGPU: 1 phiên bản mới hoàn hảo hơn kế thừa từ WebGL. Mạnh hơn, nhanh hơn và tốt hơn.
+
+-> Laravel là 1 framework của PHP làm web phổ biến nhất theo mẫu MVC. Code được giảm thiểu nhưng vẫn đạt tiêu chuẩn giúp tiết kiệm tg. Nói đến PHP thg nói đến kèm với Laravel.
+
+-> Angular, Vue: Các framework JS FE chỉ học nếu thực sự có nhu cầu công ty yêu cầu dùng
+
+-> Python: thường dùng cho AI, k học.
+
+-> Htmx: 1 thư viện FE thay đổi hoàn toàn cách code frontend nhưng điểm lợi lại k nhiều.
+Ta có thể thêm các thuộc tính ngay trong tag htmx thực hiện actions mà k cần code JS riêng. Ban đầu cũng là SSR gửi đến trình duyệt, rồi nó dùng CSR để thay đổi html bằng JS được tích hợp ngay trong tag. 
+K cần quản lý tạng thái các thứ, k cần dùng webpack. Kích thước nhẹ hơn React. Htmx k chia component như React nên khó khăn trong việc tái sử dụng. 
+
+-> Bardeen là extension giúp tạo automation thực hiện 1 chuỗi hành động trên các nền tảng gg drive, tele, openai,.... Có thể dùng các automation có sẵn làm đủ thứ để kp làm thủ công combination giữa nhiều ứng dụng với nhau
+
+-> Phaser: là 1 framework HTML5 để làm game trên web. Nó dùng Pixi.js render trên WebGL và Canvas. Hỗ trợ cả mobile và desktop. 
+Điều đb là game phát triển bởi Phaser có thể dễ dạng biên thành ứng dụng cho iOS và Android. Code rất dễ với JS nhưng ta k làm game nên bỏ
+
+-> Coze: nền tảng chuyên tạo chat bot AI trên các MXH
+
+-> SignalR: là thư viện ASP.NET hỗ trợ tính năng thời gian thưc cho website, cũng chỉ là dùng socket trong ASP.NET dễ hơn thôi.
+
+-> Neon Postgre: làm đám mây Postgre SQL, giống mongo atlas dùng cho mongodb
+
+-> Deno giống với NodeJs là một runtime environment, nó cũng được phát triển dựa trên V8 engine của Javascript giống với Nodejs. Nó khắc phục vài hạn chế của NodeJS.
+Deno không sử dụng npm mà dùng trực tiếp url. Làm việc với typescripts luôn. Dùng callback-based, không còn lo callback hell. Cấp quyền truy cập vào network các thứ thay vì gọi thoải mái như nodejs. Nói chung nó là tool mới chặt chẽ hơn thôi.
+
+-> Supabase là một nền tảng cung cấp Backend dưới dạng Dịch vụ (BaaS) cho các nhà phát triển ứng dụng. Nó được xây dựng dựa trên các công cụ mã nguồn mở và có mục tiêu cạnh tranh với Firebase của Google. 
+Supabase cung cấp các dịch vụ đám mây như cơ sở dữ liệu, xác thực, lưu trữ, không máy chủ và thời gian thực. Supabase hiện tương thích với nextjs v14
 
 -> tRPC: 1 thư viện API cực mạnh của JS giúp viết API, xây dựng web mà k cần REST API hay GraphQL. Nó cho phép tạo ra các hàm trên server và gọi trực tiếp từ client như thể chúng định nghĩa trên client. 
 Kết hợp với Typescript, nó typesafe và nếu ta đổi 1 trường trong API phía server thì client sẽ báo lỗi đúng dòng tương ứng. Nếu ta làm fullstack cho nó sẽ rất tuyệt vì tốc độ xây dựng nhanh, chứ bth server sửa 1 trường xong phải báo team client sửa theo sẽ rất mất tg.
 
--> Coze, nền tảng tạo chat bot AI trên các MXH
+-> Turso: database nosql có thể xử lý lượng lớn data hiệu quả, dựa trên libSQL (1 nhánh mã nguồn mở của SQLite). Nó chỉ hỗ trợ các kiểu cơ bản như số chuỗi, ngày tháng, .
+Tính năng của nó là database được lưu ở edge, phân tán. Nó được thiết kế để giảm trễ cho truy vấn từ bất kỳ nơi nào trên thế giới. Đó gọi là các edge functions được cung cấp bởi các nền tảng đám mây như Vercel, CloudFlare bằng cách lấy data ở gần hơn về mặt địa lý 
+=> Cơ chế hoạt động giống như Edge Computing là 1 mô hình tính toán phân tán cho phép các thiết bị ở xa xử lý dữ liệu gần với nơi dữ liệu được tạo ra. Nó là 1 từ chung nhưng mô hình này có thể kết hợp với các nền tảng đám mây để triển khai các ứng dụng ở cạnh (edge) mạng.
 
--> Deno giống với NodeJs là một runtime environment, nó cũng được phát triển dựa trên V8 engine của Javascript giống với Nodejs. Nó ra đời vì NodeJS có những hạn chế khó có thể thay đổi
-Deno không sử dụng npm mà dùng trực tiếp url. Làm việc với typescripts luôn. Dùng callback-based, không còn lo callback hell. Cấp quyền truy cập vào network các thứ thay vì gọi thoải mái như nodejs. Nói chung nó là tool mới chặt chẽ hơn, thích thì dùng.
+-> 
 
--> Bardeen là extension giúp tạo automation thực hiện 1 chuỗi hành động trên các nền tảng gg drive, tele, openai,.... Có thể dùng các automation có sẵn làm đủ thứ để kp làm thủ công combination giữa nhiều ứng dụng với nhau
-
--> Supabase là một nền tảng cung cấp Backend dưới dạng Dịch vụ (BaaS) cho các nhà phát triển ứng dụng. Nó được xây dựng dựa trên các công cụ mã nguồn mở và có mục tiêu cạnh tranh với Firebase của Google. 
-Supabase cung cấp các dịch vụ đám mây như cơ sở dữ liệu, xác thực, lưu trữ, không máy chủ và thời gian thực. Nó cho phép các nhà phát triển tạo ra các ứng dụng nhanh chóng và dễ dàng mà không cần quan tâm nhiều đến hạ tầng và cơ sở dữ liệu. Supabase hiện tương thích với nextjs v14
-
--> Glasskube là package manager cho kubernetes, giúp deploy, cài đặt, làm mọi thứ với kubernetes dễ hơn. Học K8s nên dùng.
-
--> SolidJS là 1 thư viện JS cho frontend gần giống với React.
-Nó cập nhật thay đổi UI trực tiếp trên native DOM (k dùng virtual dom như nhiều js lib/framework khác như React chẳng hạn) nên nhanh hơn. Hỗ trợ SSR. Điều đặc biệt là kích thước cực kỳ nhẹ.
-=> SolidJS mặc dù là 1 lib giống React dễ học. Nhưng performance của nó lại nhanh hơn cả Svelte, Vue, Preact, React, Angular(chậm hơn React), Inferno(1 framework khác nhanh hơn cả Svelte). Bundle size của nó trong nhiều TH giảm tới hơn 10 so với React cùng 1 ứng dụng. So với NextJS thì chưa biết thế nào
-
--> Clerk: Là tool dùng trong nextjs giúp xác thực người dùng, cung 2FA, components UI sẵn luôn, tích hợp login các nền tảng khác nhau.
-
--> Neon Postgre: làm đám mây Postgre SQL, giống mongo atlas dùng cho mongodb
-
--> SignalR là thư viện ASP.NET hỗ trợ tính năng thời gian thưc cho website, cũng chỉ là dùng socket trong ASP.NET dễ hơn thôi.
 
 
