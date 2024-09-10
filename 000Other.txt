@@ -49,74 +49,18 @@ series: https://www.youtube.com/watch?v=twuhocLtGCg&list=PLyb_C2HpOQSCAi67ZF0w-6
 
 
 
-//!!!!!!
-# Microservices
-Là mô hình phần mềm, 1 ứng dụng khổng lồ chia ra thành càng nhiều mô đun nhỏ càng tốt, thay vì làm nguyên khối. Các hãng lớn như netflix đều dùng kiểu này, các mô đun có thể được viết bằng nhiều ngôn ngữ khác nhau và tương tác thông qua API. Vì mỗi mô đun chỉ lo các tính năng riêng nhỏ nên code đơn giản, nhưng phải quản lý các microservice tương tác với nhau hợp lý tránh rắc rối.
-
-
-
-# Web programming
--> WWW or W3 được phát triển bởi Tim Berners-Lee năm 1989
-
-XHTML: Extensible HTML
-
--> Tiêu chuẩn đặt URI là từ RFC 3986: 
-http://www.google.com/search?q=test#prs
-scheme authority      path   query  fragment
-
--> IP address
-1.1.1.1: IP address của cloud flare. Nó là ip của 1 public DNS resolver của công ty Cloudflare. Nó cung dịch vụ DNS nhanh và an toàn để tăng tốc độ truy cập mạng. Resolver đó là 1 program or 1 server thực hiện convert human-readble ip thành dạng số mà máy tính hiểu
-8.8.8.8: là ip address của 1 trong các public DNS server của google.
-=> URI hay DNS đều do các tổ chức lớn trên thế giới đặt ra mà ta phải tuân theo
-
-IP address ta thấy được trong lệnh ipconfig là private IP address mà các máy trong cùng mạng có thể dùng nó để tương tác với ta. IP address ta thấy trong trang https://whatismyipaddress.com/ là public IP address mà máy dùng để tương tác với các máy bên ngoài, tùy vào config mà nó bị thay đổi. 
-Điều này k liên quan đến static ip address và dynamic ip address. Static là gán thủ công và cố định. Dynamic là gán động từ pool thông qua giao thức DHCP 1 cách tự động
-
--> Mở setting wifi cũng chỉ ra private ip address
-Để xem public ip address trên máy ta phải cho nó đi qua resolver bằng lệnh chạy:
-nslookup myip.opendns.com resolver1.opendns.com
-
-
-
-# Streaming server
-Ngoài server socket hay server http bth, ta còn có streaming server là 1 loại server cung các continuous data như video, audio. 
-Khi xem video từ youtube, ta k tương tác với server http mà tương tác với 1 streaming server. Nó load video từ từ và gửi cho client trong khi duy trì connection chứ k load 1 phát tất cả. Khi nhúng video thg ta k cần xử lý thủ công phần đó.
-
--> Cách biến gg drive thành streaming server phim
-Các web làm phim phải bỏ ra lượng tiền lớn để thuê streaming server cho video. Ta có thể tận dụng gg drive làm streaming server lưu phim.
-
-Đầu tiên khi mở 1 video trong gg drive, nó gửi request https://drive.google.com/get_video_info?docid=<...>&drive_originator_app=<...> với từng video. Mỗi video có 1 id riêng. Sau khi tải vid lên ta chỉ cần lấy id đó là được
-Thực tế có nhiều đường link để get_video_info: VD https://mail.google.com/e/get_video_info  và  https://drive.google.com/e/get_video_info  và  https://docs.google.com/e/get_video_info
-Nhận kết quả trả về cho vào nodejs thư viện query-string để parse data lấy ra trường fmt_stream_map. Trường này định nghĩa ra các url tương ứng với chất lượng video khác nhau. VD 18 là MP4 360p, 22 là MP4 720p.
-Mở url lên là xem được phim. Nếu mở local ở máy ta sau khi đã đăng nhập thì được nhưng mở ở máy người khác thì không:
-- Để qua mặt check ip của gg: Ta phải lấy 2 đường link ipv4 và ipv6, check khi người dùng xài IPv4 thì đưa link ipv6 và ngược lại vì gg drive k check ip khi type khác nhau.
-- Tuy nhiên để link đó hoạt động thì cần có cookie trường DRIVE_STREAM khi truy cập url. Thậm chi có thể phải redirect qua nhiều url thì mới có được link chạy được luôn, ở mỗi url redirect lại phải thêm cookie vào.
-
-=> Chính vì cookie nên hiện tại k thể dùng gg drive làm streaming server được nữa. Thực tế ta vẫn có thể làm bằng puppeter kiểu: client gửi request video tới server -> server search database ra id -> get_video_info lấy url -> dùng puppetter truy cập gg drive của ta để lấy cookie -> server dùng cookie liên tục truy cập streaming server, để kệ nó redirect tới page cuối cùng thì lấy ra url cuối -> gửi lại url đó và cookie cho client -> client xem được video
-=> Cx vì id của video nên các hãng thấy phim lậu có thể report dựa vào id đó để gg drive chặn lại.  
-
--> Để thêm Cookie vào request, ta thêm vào headers. VD thêm 2 trường vào cookie thì headers sẽ là:
-Cookie: Key1=Value1;Key2=Value2
-
-
-
 # Tính năng của VSC
--> Forwarding port:
-Mục ports cạnh terminal, hoặc gõ npx serve sẽ xuất hiện
-Login vào github, nó tận dùng DevTunnel để forwarding port local ra ngoài internet nhanh
-=> Thay thế ngrok
+-> Forwarding port
+Mục ports cạnh terminal, dùng DevTunnel để forwarding port local ra ngoài internet nhanh
 
 -> Cách search trong node_modules bằng VSC
 Vào user settings tìm search exclude: xóa **/node_modules đi
-
 Nếu chỉ tìm node_modules theo tên file thì nên dùng extension Find in node_modules
 
 -> https://www.xda-developers.com/how-use-gpu-visual-studio-code/
 Dùng GPU cho VSC giúp tốc độ của VSC tăng cao đặc biệt khi liên quan đến các tác vụ render
 
 -> URL tổng hợp phím tắt của VSC: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-
--> 
 CTRL + T => search biến và hàm trong code
 CTRL + D => multiple select
 CTRL + SHIFT + L => multiple select all
@@ -124,36 +68,60 @@ CTRL + B
 
 
 
-# Học bằng ánh xạ
--> 1 tool thao tác DB mới chỉ cần biết tối thiểu các kỹ thuật:
-Cách connect vào DB. Mỗi query là 1 connection hay connect 1 lần và dùng mọi lúc. Có thể dùng connectionPool không. Xử lý số lần reconnectionTries và reconnectInterval, lấy trạng thái connection hiện tại. Setup debug thông tin db nếu có. Cách setup khi connect nhiều hơn 1 database
-Cách query get, update db cơ bản theo pattern tốt nhất. Cách dùng generic nếu có khi nhiều db có các hàm như nhau (getbyid, getall, deletebyid, updatebyid,...). Lấy 1 giá trị hay lấy 1 object hay lấy 1 list object có khác nhau. Parameterized chống sql injection. 
-Cách thực hiện transaction, gom nhiều update vào 1 transaction, cách rollback khi lỗi. Các hàm atomic có sẵn
-Dùng lazy query tới DB bằng tool đó.
-Các kỹ năng nâng cao hơn: Cách update database kiểu migration, alter table như bỏ 1 trường hay thêm 1 trường mới mà vẫn migrate đủ data cũ, update theo version k bị update trùng version cũ; đánh index; cascade delete, cascade update; replica database và đồng bộ giữa các db; Backup database
+# Biến gg drive thành streaming server phim
+Các web làm phim phải bỏ ra lượng tiền lớn để thuê streaming server cho video. Ta có thể tận dụng gg drive làm streaming server lưu phim.
 
--> 1 ngôn ngữ mới: Ánh xạ như JS, C# nhanh
+Đầu tiên khi mở 1 video trong gg drive, nó gửi request https://drive.google.com/get_video_info?docid=<...>&drive_originator_app=<...> với từng video. Mỗi video có 1 id riêng. Sau khi tải vid lên ta chỉ cần lấy id đó là được
+Có nhiều đường link để get_video_info như: https://mail.google.com/e/get_video_info  https://drive.google.com/e/get_video_info  https://docs.google.com/e/get_video_info
+Nhận kết quả trả về cho vào nodejs thư viện query-string để parse data lấy ra trường fmt_stream_map. Trường này định nghĩa ra các url tương ứng với chất lượng video khác nhau. VD 18 là MP4 360p, 22 là MP4 720p.
+Mở url lên là xem được phim. Nếu mở local ở máy ta sau khi đã đăng nhập thì được nhưng mở ở máy người khác thì không:
+- Để qua mặt check ip của gg: Ta phải lấy 2 đường link ipv4 và ipv6, check khi người dùng xài IPv4 thì đưa link ipv6 và ngược lại vì gg drive k check ip khi type khác nhau.
+- Tuy nhiên để link đó hoạt động thì cần có cookie trường DRIVE_STREAM khi truy cập url. Thậm chi có thể phải redirect qua nhiều url thì mới có được link chạy được luôn, ở mỗi url redirect lại phải thêm cookie vào. Để thêm Cookie vào request, ta thêm vào headers. VD thêm 2 trường vào cookie thì headers sẽ là: Cookie: Key1=Value1;Key2=Value2
 
--> 1 server:
-//!!!!!!!
-Tương tự 1 framework frontend, message queue với các cái đã biết
+=> Chính vì cookie nên hiện tại k thể dùng gg drive làm streaming server được nữa. 
+Thực tế ta vẫn có thể làm bằng puppeter kiểu: client gửi request video tới server -> server search database ra id -> get_video_info lấy url -> dùng puppetter truy cập gg drive của ta để lấy cookie -> server dùng cookie liên tục truy cập streaming server, để kệ nó redirect tới page cuối cùng thì lấy ra url cuối -> gửi lại url đó và cookie cho client -> client xem được video. Các hãng thấy phim lậu có thể report dựa vào id của video để gg drive chặn lại.  
+
+
+
+# Monorepos
+Mã code mọi phần trong hệ thống lưu chung 1 repo. Nó khác với kiến trúc nguyên khối vì nó vẫn tách, chỉ là lưu chung 1 repo thôi. Lợi ích lớn nhất là dev có thể chạy 1 phát toàn bộ nền tảng trên máy họ luôn.
+=> Có ưu và nhược điểm riêng, best case thì chỉ nên dùng monorepo khi các phần trong dự án chạy cùng 1 ngôn ngữ hoặc cần chạy cùng với nhau.
+VD mỗi khi code cần chạy song song UI và server thì nên gom chung 1 repo thay vì tạo 2 repo. Ví dụ pull code về là có bản mới nhất của cả FE BE luôn.
+VD các thư viện, SDK dùng trong dự án mà tái sử dụng ở các dự án khác thì nên tách nó ở repo riêng.
+
+
+
+# Content Management System
+CMS là hệ thống quản trị nội dung. VD ta quản lý text, video, ảnh các thứ bằng CMS chẳng hạn. Nó khác với 1 cái store bth ở chỗ là nó dùng để quản lý tài nguyên trên trang web. 1 CMS tốt sẽ cho phép tạo và quản lý website hoàn toàn bằng giao diện mà k cần code. 
+VD wordpress, admin có thể vào quản lý tài nguyên trang web hay tạo các thành phần web hoàn toàn bằng giao diện và là serverless luôn.
+
+
+
+# Command Injection
+Chỉ bị khi ứng dụng cho ngừoi dùng nhập input để nhét vào command. Thì giông SQL injection, nhập command nguy hiểm vào cho máy chạy là dính.
+
+
+
+# Command query responsibility segregation (CQRS) pattern
+Là pattern trong thiết kế hệ thống phức tạp yêu cầu cao về hiệu suất.
+VD Ta phải tách class để GetData và UpdateData logic độc lập. Có thể dùng mô hình dữ liệu hay các tools khác nhau cho việc đọc và ghi.
+Việc chia ra master database chuyên ghi và slaves chuyên để đọc cũng chính là dùng CQRS pattern.
+
+
+
+# Stackblitz: nền tảng giúp tạo và demo nhanh dự án, tiện khi cần gửi code cho ai đó
 
 
 
 # Other:
--> Web service nó như 1 loại riêng của API chỉ dùng cho web. Nó dùng giao thức http là phổ biến nhất và 3 chuẩn chính là SOAP, REST và XML-RPC làm phương tiện giao tiếp. API có thể dùng bất cứ phương tiện giao tiếp nào để bắt đầu tương tác giữa các ứng dụng. VD: các cuộc gọi hệ thống bởi kernel linux API.
-
--> Liệu có code được 1 đoạn mã call api từ remote server bằng C thuần hay dựng 1 web server với nó, k dùng thư viện. Điều này là có thể, bên trong hệ điều hành luôn có module built-in giúp thao tác với network. Nếu lúc nào cũng dựa vào thư viện thì làm sao máy tính connect được với wifi hay lấy các thông số với thời gian cũng như chạy lệnh ping chẳng hạn. Các package hay thư viện http ta sử dụng ở tầng thấp nhất của nó chính là dùng các module built-in của hệ điều hành mà thôi. Do đó trong C nếu có thể thao tác với phần cứng thì có thể trigger các module này để thao tác với network.
-
 -> Fintech: là finance và technology, công nghệ tài chính. Là việc sáng tạo công nghệ ứng dụng trong các dịch vụ tài chính. Từ này xuất hiện khi IT dần xâm lấn vào các hệ thống tiền tệ.
-
--> So sánh về memory giữa các ngôn ngữ (k xét về tốc độ chạy task):
-Rust tokio vẫn là ngôn ngữ tốn ít memory nhất so với mọi ngôn ngữ khác
-NodeJS tốn ít memory hơn C# khi có 100 ngàn task đồng thời nhưng khi lên mức quá nhiều là 1 triệu task thì C# bắt đầu tốn ít hơn NodeJS. 
-Go thì tốn memory ít khi chạy ít task nhưng số lượng task đồng thời tăng nhanh sẽ khiến nó tốn lượng memory tăng vọt. Python cũng vậy.
-
--> SDK là toàn bộ công cụ, API là cái bên trong mà dev sử dụng
 
 -> Prompt engineer là 1 từ chỉ nghề của những người tối ưu hóa input cho AI chạy để có đầu ra tốt hơn
 
+-> Liệu có dựng được 1 web server bằng C thuần mà k dùng thư viện. Có thể, hđh luôn có module built-in giúp thao tác với network. Các thư viện http ta dùng ở tầng thấp nhất cũng là dùng các module built-in của hệ điều hành mà thôi. Do đó trong C nếu có thể thao tác với phần cứng thì có thể trigger các module này để thao tác với network.
+
+-> Ngoài HTTP truyền tải dữ liệu qua mạng, còn có SOAP và XML-RPC tương tự nhưng dùng XML để định dạng dữ liệu.
+
+-> Devtool của browser mục responsive cho phép chụp toàn web
+CTRL/Command + P => gõ ? => Run Command => Show Layers để mở layer inspector
 

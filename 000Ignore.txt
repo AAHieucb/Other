@@ -58,6 +58,50 @@ Kết hợp với Typescript, nó typesafe và nếu ta đổi 1 trường trong
 Tính năng của nó là database được lưu ở edge, phân tán. Nó được thiết kế để giảm trễ cho truy vấn từ bất kỳ nơi nào trên thế giới. Đó gọi là các edge functions được cung cấp bởi các nền tảng đám mây như Vercel, CloudFlare bằng cách lấy data ở gần hơn về mặt địa lý 
 => Cơ chế hoạt động giống như Edge Computing là 1 mô hình tính toán phân tán cho phép các thiết bị ở xa xử lý dữ liệu gần với nơi dữ liệu được tạo ra. Nó là 1 từ chung nhưng mô hình này có thể kết hợp với các nền tảng đám mây để triển khai các ứng dụng ở cạnh (edge) mạng.
 
+-> WinterJS: là một runtime JavaScript siêu nhanh, tương tự như Node.js. Được viết bằng Rust, dùng JS engine SpiderMonkey để thực thi JS. Có thể biên dịch ra Web Assembly hoàn toàn, tốc độ nhanh hơn cả Bun.
 
+-> Wasp: tool giúp phát triển ứng dụng NodeJS, ReactJS dễ hơn. Có thể visualize page và API, deploy dễ dàng.
 
+-> Azure cloud: phức tạp, chắc chắn theo hãng học
+
+-> AWS cloud: phức tạp, chắc chắn theo hãng học
+Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng dụng của họ
+
+-> Google Cloud Platform: phức tạp
+
+-> Nx và Learna: tools quản lý monorepo cho các framework JS
+
+-> Yarg: là tool thực hiện nhiệm vụ reverse proxy trong web. Có thể dùng để xây dựng load balancer or API gateway bằng C# cho ứng dụng ASP.NET
+
+-> Cloudflare: có thể add website của ta vào để chống DDoS, botnet attack, hosting.
+
+-> Strapi: là 1 CMS headless tạo serverless. Nó chỉ quản lý phần backend serverless và cung cấp API để kết nối với bất kỳ frontend nào. Tất cả bằng giao diện, k cần code.
+
+-> GitGuardian: tool quét mã nguồn và tìm commit chứa thông tin nhạy cảm như API keys, mật khẩu, tokens bị push nhầm lên public repo.
+
+-> Remix Run: 1 loại framework fullstack dùng tạo React CSR hay SSR đều được, như NextJS. Phù hợp ứng dụng hiệu suất cao, data phức tạp, trải nghiệm mượt mà.
+
+-> Fileforge: cung cấp service liên quan đến xử lý tệp. VD có thể chuyển HTML thành PDF file thông qua thư viện nó cung sẵn @fileforge/react-print và @fileforge/client
+
+-> Winglang: ngôn ngữ dành riêng cho lập trình cloud app.
+
+-> EmberJS: Framework FE giống React, chả có gì nổi bật, kbh dùng.
+
+-> AdonisJS: Typescript framework BE giống NodeJS nhưng tích hợp sẵn nhiều thứ giúp quá trình xây dựng nhanh hơn thôi, performance k đổi.
+
+-> Fresh: Typescript FE framework phát triển bởi Deno, k cần build, cấu hình ít, dễ dùng, chỉ hỗ trợ SSR tối ưu.
+
+-> Deepkit: Typescript BE framework, tích hợp sẵn nhiều thứ, cũng chả biết tốt hơn gì so với AdonisJS không.
+
+-> Dualbot: Tool giúp chạy nhiều hđh 1 máy
+
+-> Travis CI: giống github actions nhưng dễ dùng hơn, bắt commit trên git để tự build, test, deploy vào các nền tảng như heroku, aws.
+
+-> Coveralls: cung cấp thông tin phần trăm mã nguồn đã được kiểm thử và độ bao phủ (code coverage) bởi các bộ kiểm thử tự động. Thường dùng với các công cụ CI, Vd khi các bài test chạy trên Travis CI xong, nó sẽ tạo ra một báo cáo về độ bao phủ mã và gửi đến Coveralls.
+
+-> Fastlane: tương tự nhưng chuyên CI cho ứng dụng mobile.
+
+-> Neo4j là một hệ quản trị cơ sở dữ liệu đồ thị open source.
+
+-> Cypress cũng là 1 frontend testing tool
 
