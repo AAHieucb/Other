@@ -105,3 +105,6 @@ Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng
 
 -> Cypress cũng là 1 frontend testing tool
 
+-> Bun > NodeJS ~ C# vì dùng engine JavascriptCore của Safari nhanh hơn V8 Engine của nodejs. Bun được viết bằng Ziglang là một ngôn ngữ bậc thấp.
+
+-> SolidJS là framework cực kỳ nhẹ, bundle size < 10 lần React, performance nhanh hơn cả Svelte, Preact, Inferno (1 framework khác nhanh hơn cả Svelte). Nó cập nhật thay đổi UI trực tiếp trên native DOM, k dùng virtual dom như react nên nhanh hơn, hỗ trợ SSR.
