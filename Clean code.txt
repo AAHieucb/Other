@@ -244,3 +244,6 @@ public class PortfolioTest {
 }
 -> Ở trên, Portfolio phụ thuộc vào StockChange sẽ cô lập tất cả những chi tiết liên quan đến price
 
+-> Viết condition cần ưu tiên hiệu suất là phải ngắt mạch và condition được tái sử dụng khi check nhiều lần chứ k tính toán lại
+Đã từng gặp nhiều loại condition lồng nhau viết khó hiểu vc, mỗi người viết hiểu được thôi => Cần chia nhỏ sang tên biến cho dễ maintain. 
+Condition viết dạng hàm thường khó maintain nếu nó phức tạp và mở rộng nhiều trong tương lai 

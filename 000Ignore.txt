@@ -108,3 +108,21 @@ Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng
 -> Bun > NodeJS ~ C# vì dùng engine JavascriptCore của Safari nhanh hơn V8 Engine của nodejs. Bun được viết bằng Ziglang là một ngôn ngữ bậc thấp.
 
 -> SolidJS là framework cực kỳ nhẹ, bundle size < 10 lần React, performance nhanh hơn cả Svelte, Preact, Inferno (1 framework khác nhanh hơn cả Svelte). Nó cập nhật thay đổi UI trực tiếp trên native DOM, k dùng virtual dom như react nên nhanh hơn, hỗ trợ SSR.
+
+-> Project idx giúp tập trung phát triển FE trên cloud. Như kiểu firebase chuyên BE thì project idx chuyên FE.
+
+-> Vbee: AI tool tạo giọng nói từ văn bản, chuyên dùng cho tiếng việt.
+
+-> One: 1 react framework dùng cho cả web và react native, hỗ trợ cả CSR và SSR.
+
+-> Tamagui: 1 thư viện UI dùng cho cả react và react native, tính tương thích cao. Hiệu suất cao do có bước tối ưu hoá trước khi biên dịch.
+
+-> Rosebud AI: AI tạo game từ text, 1 hit nhét vào thẻ canvas luôn
+
+-> Tauri 2.0: framework giúp xây ứng dụng mobile desktop bằng công nghệ web. VD ta dùng vite + tauri tạo UI app desktop tương thích mọi OS và dùng Rust làm BE ok.
+
+-> Tiptap: framework dùng tạo text editor cực mạnh. Nó đa dạng và cân nhiều loại text editor phức tạp. Dùng cho React ok.
+
+-> Algolia: cung cấp dịch vụ tìm kiếm mạnh, hỗ trợ nh kiểu phức tạp. VD ốp data lên cho nó index r query full text search luôn. Hỗ trợ sẵn AI đưa ra gợi ý search, autocomplete, ranking.
+
+-> 

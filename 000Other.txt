@@ -7,22 +7,13 @@ Product: quy mô nhỏ hơn, công ty nắm giữ sản phẩm nên dev hiểu �
 
 
 
-# Vị trí của ta trong thế giới lập trình về độ phổ biến:
-Lập trình web > lập trình di động > lập trình nhúng - iot
-Lập trình di động ít dev hơn lập trình web nên lương cao hơn 1 chút, còn lập trình nhúng - iot thì ít hơn hẳn nên tài liệu ít và học cũng khó liên quan đến thiết kế mạch lập trình trên các con chip nhỏ. Đa phần tuyển dụng toàn web. 1 người làm backend có thể xử lý dữ liệu cả cho mobile và web, k khác nhau là mấy, chỉ là 2 nền tảng này front end rất khác biệt
-Còn có các mảng ít code hơn nhưng nặng kỹ thuật như: DevOps chuyên deploy các sản phẩm. Có công ty xài server riêng thì công quản lý và chi phí lắp đặt cao, thay vào đó họ dùng cloud của amazon, google,.. có sẵn vài nghìn con server cho thuê thì nếu đủ tốt có thể thấy chức năng cung cấp k khác gì tự có server riêng chỉ bị nhược điểm duy nhất là phụ thuộc vào các công ty lớn khác mà thôi. DevOps sẽ phải nắm vững tất cả và các thứ như Azure, GCP, AWS, Docker, Kubernetes, ELK Stack,..; Data engineer chuyên xử lý dữ liệu quyết định đến chiến lược của công ty
-Còn các mảng ít code hơn nữa như: Tester, PM(quản lý dự án), BA(cầu nối với khách hàng),.. Đôi khi BA và PM là 1 sẽ tiện hơn
-Các mảng học cực nhiều lý thuyết và code khá nhiều như DM, ML, AI,..
-
-
-
 # POC(Proof of Concept)
 1 ứng dụng chứng minh tính khả thi của 1 ý tưởng or 1 method nào đó => giúp cho việc chứng minh 1 ý tưởng gì là đúng, giúp ta đi đúng vào 1 cái hướng có tính thực tiễn, khả thi chứ kp là mãi mãi chỉ là lời nói k thể áp dụng thực tiễn, giúp tăng tính thuyết phục về ý tưởng.
 Ví dụ ta thể hiện proof of concept của cái gì tức là ta đang đưa ra những lý lẽ của nó và nó áp dụng trong thực tế khả thi ntn
 
 
 
-# BrSE(bridge system engineering) 
+# BrSE (bridge system engineering) 
 Kỹ sư cầu nối, kết nối team dev với khách hàng. Phải nắm được từ đầu tới đuôi dự án để ứng phó kịp thời. Họ liên hệ, phân tích yêu cầu, trực tiếp code, demo sản phẩm, báo cáo tiến độ, thương lượng. 
 PM bình thường là người phân chia, giám sát công việc từng người thì BrSE kiêm vai trò PM chỉ là giám sát chung dự án và báo cáo tiến độ cho khách mà thôi
 
@@ -43,12 +34,6 @@ LAMP: Linux, Apache, MySQL, PHP => kbh dùng
 
 
 
-# Các series hay nhưng k thực tiễn
--> Discovering hidden API: là hướng dẫn tìm ra các API ẩn trong website, có thể dùng nó để hack mở khóa các page ẩn thông tin hay trả phí để xem thông tin
-series: https://www.youtube.com/watch?v=twuhocLtGCg&list=PLyb_C2HpOQSCAi67ZF0w-6CvCvZs_OXAB&index=1
-
-
-
 # Tính năng của VSC
 -> Forwarding port
 Mục ports cạnh terminal, dùng DevTunnel để forwarding port local ra ngoài internet nhanh
@@ -65,6 +50,8 @@ CTRL + T => search biến và hàm trong code
 CTRL + D => multiple select
 CTRL + SHIFT + L => multiple select all
 CTRL + B 
+
+-> Open simple browser
 
 
 
@@ -124,4 +111,21 @@ Việc chia ra master database chuyên ghi và slaves chuyên để đọc cũng
 
 -> Devtool của browser mục responsive cho phép chụp toàn web
 CTRL/Command + P => gõ ? => Run Command => Show Layers để mở layer inspector
+
+-> Cách đọc thông số máy tính: Integrated graphics, GPU clock speed, semiconductor size, openGL version, supported display, CPU temparature, CPU speed, turbo clock speed, cache size, RAM speed, max memory bandwidth, max memory size, memory channels, ECC memory, 
+URL: https://www.youtube.com/watch?v=USQ_UZVw5rY
+
+-> Mở composer view trong cursor với Command+SHIFT+I => có thể cô lập context, tạo file riêng cho từng mục luôn
+
+-> Series discovering hidden API hay nhưng k thực tiễn: hướng dẫn tìm ra các API ẩn trong website, có thể dùng nó để hack mở khóa các page ẩn thông tin hay trả phí để xem thông tin. URL: https://www.youtube.com/watch?v=twuhocLtGCg&list=PLyb_C2HpOQSCAi67ZF0w-6CvCvZs_OXAB&index=1
+
+-> Lập trình web > lập trình di động > lập trình nhúng - iot
+Lập trình di động chỉ khác lập trình web ở FE, còn BE có thể tạo chung API cho cả mobile và web.
+Lập trình húng phải thiết kế mạch code trên các con chip nhỏ.
+DevOps sẽ phải nắm vững tất cả và các thứ như Azure, GCP, AWS, Docker, Kubernetes, ELK Stack. 
+Data engineer chuyên xử lý dữ liệu quyết định đến chiến lược của công ty
+Còn các mảng ít code hơn nữa như: Tester, PM(quản lý dự án), BA(cầu nối với khách hàng),.. Đôi khi BA và PM là 1 sẽ tiện hơn
+Các mảng học cực nhiều lý thuyết và code khá nhiều như DM, ML, AI,..
+
+-> VD: https://www.youtube.com/watch?v=aBVF-3NE_1Q => setup firebase authen, db, storage, algolia, deploy vercel app
 
