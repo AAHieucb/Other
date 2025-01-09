@@ -80,7 +80,11 @@ VD các thư viện, SDK dùng trong dự án mà tái sử dụng ở các dự
 
 # Content Management System
 CMS là hệ thống quản trị nội dung. VD ta quản lý text, video, ảnh các thứ bằng CMS chẳng hạn. Nó khác với 1 cái store bth ở chỗ là nó dùng để quản lý tài nguyên trên trang web. 1 CMS tốt sẽ cho phép tạo và quản lý website hoàn toàn bằng giao diện mà k cần code. 
-VD wordpress, admin có thể vào quản lý tài nguyên trang web hay tạo các thành phần web hoàn toàn bằng giao diện và là serverless luôn.
+VD wordpress, admin có thể vào quản lý tài nguyên trang web hay tạo các thành phần web hoàn toàn bằng giao diện và là serverless luôn. Hệ thống tự lo hết FE, BE, DB
+
+-> Headless CMS: chỉ quản lý nội dung và k cung sẵn UI. Ta phải tự dựng UI và lây nội dung qua API của headless CMS.
+Có thể dùng Headless CMS là BE, hệ thống tự quản lý mọi thứ còn lại. 
+VD: Dùng Headless CMS (như Sanity): ta login sanity và thêm bài viết, sanity cung 1 API, vào React request tới API đó để lấy bài viết. Dùng nó thay thế BE ok.
 
 
 
@@ -100,6 +104,22 @@ Việc chia ra master database chuyên ghi và slaves chuyên để đọc cũng
 
 
 
+# SS performance
+Rust tốn ít bộ nhớ và tốc độ nhanh hơn Go. Zig > Rust > Go > Bun > Deno > NodeJS nhưng Zig là ngôn ngữ bậc thấp quá nên k dùng.
+Go > C#
+MongoDB > PostgreSQL > MySQL, SQLite > PostgreSQL
+Memcached > Redis
+RabbitMQ > Kafka
+Nginx > Apache
+
+
+
+# Kiểm thử
+Ngoài test tìm bug, QA cũng thường test hiệu năng quá tải hay k cho team devops xử lý, tăng phần cứng hay tối ưu API. 
+Performance test có acceptance criteria cụ thể. VD query dynamic content k được quá 95% request bị lâu hơn 8s. Upload file lâu nhất là 1m.
+
+
+
 # Other:
 -> Fintech: là finance và technology, công nghệ tài chính. Là việc sáng tạo công nghệ ứng dụng trong các dịch vụ tài chính. Từ này xuất hiện khi IT dần xâm lấn vào các hệ thống tiền tệ.
 
@@ -109,23 +129,10 @@ Việc chia ra master database chuyên ghi và slaves chuyên để đọc cũng
 
 -> Ngoài HTTP truyền tải dữ liệu qua mạng, còn có SOAP và XML-RPC tương tự nhưng dùng XML để định dạng dữ liệu.
 
--> Devtool của browser mục responsive cho phép chụp toàn web
-CTRL/Command + P => gõ ? => Run Command => Show Layers để mở layer inspector
-
 -> Cách đọc thông số máy tính: Integrated graphics, GPU clock speed, semiconductor size, openGL version, supported display, CPU temparature, CPU speed, turbo clock speed, cache size, RAM speed, max memory bandwidth, max memory size, memory channels, ECC memory, 
 URL: https://www.youtube.com/watch?v=USQ_UZVw5rY
 
--> Mở composer view trong cursor với Command+SHIFT+I => có thể cô lập context, tạo file riêng cho từng mục luôn
-
 -> Series discovering hidden API hay nhưng k thực tiễn: hướng dẫn tìm ra các API ẩn trong website, có thể dùng nó để hack mở khóa các page ẩn thông tin hay trả phí để xem thông tin. URL: https://www.youtube.com/watch?v=twuhocLtGCg&list=PLyb_C2HpOQSCAi67ZF0w-6CvCvZs_OXAB&index=1
-
--> Lập trình web > lập trình di động > lập trình nhúng - iot
-Lập trình di động chỉ khác lập trình web ở FE, còn BE có thể tạo chung API cho cả mobile và web.
-Lập trình húng phải thiết kế mạch code trên các con chip nhỏ.
-DevOps sẽ phải nắm vững tất cả và các thứ như Azure, GCP, AWS, Docker, Kubernetes, ELK Stack. 
-Data engineer chuyên xử lý dữ liệu quyết định đến chiến lược của công ty
-Còn các mảng ít code hơn nữa như: Tester, PM(quản lý dự án), BA(cầu nối với khách hàng),.. Đôi khi BA và PM là 1 sẽ tiện hơn
-Các mảng học cực nhiều lý thuyết và code khá nhiều như DM, ML, AI,..
 
 -> VD: https://www.youtube.com/watch?v=aBVF-3NE_1Q => setup firebase authen, db, storage, algolia, deploy vercel app
 

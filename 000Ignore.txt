@@ -28,8 +28,6 @@ Có thể sẽ không bao giờ đụng vì nó giúp code front end nhưng ở 
 
 -> Angular, Vue: Các framework JS FE chỉ học nếu thực sự có nhu cầu công ty yêu cầu dùng
 
--> Python: thường dùng cho AI, k học.
-
 -> Htmx: 1 thư viện FE thay đổi hoàn toàn cách code frontend nhưng điểm lợi lại k nhiều.
 Ta có thể thêm các thuộc tính ngay trong tag htmx thực hiện actions mà k cần code JS riêng. Ban đầu cũng là SSR gửi đến trình duyệt, rồi nó dùng CSR để thay đổi html bằng JS được tích hợp ngay trong tag. 
 K cần quản lý tạng thái các thứ, k cần dùng webpack. Kích thước nhẹ hơn React. Htmx k chia component như React nên khó khăn trong việc tái sử dụng. 
@@ -42,8 +40,6 @@ K cần quản lý tạng thái các thứ, k cần dùng webpack. Kích thướ
 -> Coze: nền tảng chuyên tạo chat bot AI trên các MXH
 
 -> SignalR: là thư viện ASP.NET hỗ trợ tính năng thời gian thưc cho website, cũng chỉ là dùng socket trong ASP.NET dễ hơn thôi.
-
--> Neon Postgre: làm đám mây Postgre SQL, giống mongo atlas dùng cho mongodb
 
 -> Deno giống với NodeJs là một runtime environment, nó cũng được phát triển dựa trên V8 engine của Javascript giống với Nodejs. Nó khắc phục vài hạn chế của NodeJS.
 Deno không sử dụng npm mà dùng trực tiếp url. Làm việc với typescripts luôn. Dùng callback-based, không còn lo callback hell. Cấp quyền truy cập vào network các thứ thay vì gọi thoải mái như nodejs. Nói chung nó là tool mới chặt chẽ hơn thôi.
@@ -111,13 +107,9 @@ Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng
 
 -> Project idx giúp tập trung phát triển FE trên cloud. Như kiểu firebase chuyên BE thì project idx chuyên FE.
 
--> Vbee: AI tool tạo giọng nói từ văn bản, chuyên dùng cho tiếng việt.
-
 -> One: 1 react framework dùng cho cả web và react native, hỗ trợ cả CSR và SSR.
 
 -> Tamagui: 1 thư viện UI dùng cho cả react và react native, tính tương thích cao. Hiệu suất cao do có bước tối ưu hoá trước khi biên dịch.
-
--> Rosebud AI: AI tạo game từ text, 1 hit nhét vào thẻ canvas luôn
 
 -> Tauri 2.0: framework giúp xây ứng dụng mobile desktop bằng công nghệ web. VD ta dùng vite + tauri tạo UI app desktop tương thích mọi OS và dùng Rust làm BE ok.
 
@@ -125,4 +117,14 @@ Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng
 
 -> Algolia: cung cấp dịch vụ tìm kiếm mạnh, hỗ trợ nh kiểu phức tạp. VD ốp data lên cho nó index r query full text search luôn. Hỗ trợ sẵn AI đưa ra gợi ý search, autocomplete, ranking.
 
--> 
+-> LangChain: framework xây dựng ứng dụng dựa trên LLM.
+
+-> KolibriOS là hđh viết hoàn toàn bằng assembly cực nhẹ nhưng vẫn cung cấp các tính năng đầy đủ của 1 OS.
+
+-> Selenium: automation tool cho browser, có thể setup tự động mở browser điền form ấn nút các thứ để kiểm thử cho nhanh. Viết code bằng JS or Python.
+
+-> Jenkins: tool CI/CD tương thích mọi nền tảng và các tool khác. Giống kiểu travisCI hay github actions nhưng travis dùng cloud, trả phí thì cái này 100% free và self hosted.
+
+-> JMeter: tool test hiệu năng chịu tải của website.
+
+-> xterm.js: Tạo terminal trên browser
