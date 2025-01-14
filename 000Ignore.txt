@@ -133,7 +133,4 @@ Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng
 
 -> Vaultwarden: giống bitwarden nhưng cài và chạy với docker ok
 
--> Focalboard: giống Trello, tool quản lý tiến độ công việc. Có thể cài trực tiếp local qua docker.
-https://appflowy.io/ => ứng dụng tương tự dễ dùng
-
 -> Caddy webserver: thay thế nginx nhưng cấu hình dễ hơn, nếu k cần rules quá phức tạp thì dùng caddy webserver ok. Cài qua docker ok.
