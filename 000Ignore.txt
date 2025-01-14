@@ -42,7 +42,7 @@ K cần quản lý tạng thái các thứ, k cần dùng webpack. Kích thướ
 -> SignalR: là thư viện ASP.NET hỗ trợ tính năng thời gian thưc cho website, cũng chỉ là dùng socket trong ASP.NET dễ hơn thôi.
 
 -> Deno giống với NodeJs là một runtime environment, nó cũng được phát triển dựa trên V8 engine của Javascript giống với Nodejs. Nó khắc phục vài hạn chế của NodeJS.
-Deno không sử dụng npm mà dùng trực tiếp url. Làm việc với typescripts luôn. Dùng callback-based, không còn lo callback hell. Cấp quyền truy cập vào network các thứ thay vì gọi thoải mái như nodejs. Nói chung nó là tool mới chặt chẽ hơn thôi.
+Deno không sử dụng npm mà dùng trực tiếp url. Làm việc với typescripts luôn. Dùng callback-based, không còn lo callback hell. Phải cấp quyền truy cập vào network các thứ thay vì gọi thoải mái như nodejs. Nói chung nó là tool mới chặt chẽ hơn thôi. Có thể dùng cho cả FE và BE.
 
 -> Supabase là một nền tảng cung cấp Backend dưới dạng Dịch vụ (BaaS) cho các nhà phát triển ứng dụng. Nó được xây dựng dựa trên các công cụ mã nguồn mở và có mục tiêu cạnh tranh với Firebase của Google. 
 Supabase cung cấp các dịch vụ đám mây như cơ sở dữ liệu, xác thực, lưu trữ, không máy chủ và thời gian thực. Supabase hiện tương thích với nextjs v14
@@ -123,8 +123,17 @@ Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng
 
 -> Selenium: automation tool cho browser, có thể setup tự động mở browser điền form ấn nút các thứ để kiểm thử cho nhanh. Viết code bằng JS or Python.
 
--> Jenkins: tool CI/CD tương thích mọi nền tảng và các tool khác. Giống kiểu travisCI hay github actions nhưng travis dùng cloud, trả phí thì cái này 100% free và self hosted.
+-> Jenkins: tool CI/CD tương thích mọi nền tảng và các tool khác. Giống kiểu travisCI hay github actions nhưng travis dùng cloud, trả phí thì cái này 100% free và self hosted => tự cài với docker kết hợp với github ok
 
 -> JMeter: tool test hiệu năng chịu tải của website.
 
 -> xterm.js: Tạo terminal trên browser
+
+-> Stackblitz: nền tảng giúp tạo và demo nhanh dự án, tiện khi cần gửi code cho ai đó
+
+-> Vaultwarden: giống bitwarden nhưng cài và chạy với docker ok
+
+-> Focalboard: giống Trello, tool quản lý tiến độ công việc. Có thể cài trực tiếp local qua docker.
+https://appflowy.io/ => ứng dụng tương tự dễ dùng
+
+-> Caddy webserver: thay thế nginx nhưng cấu hình dễ hơn, nếu k cần rules quá phức tạp thì dùng caddy webserver ok. Cài qua docker ok.

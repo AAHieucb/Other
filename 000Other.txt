@@ -100,10 +100,6 @@ Việc chia ra master database chuyên ghi và slaves chuyên để đọc cũng
 
 
 
-# Stackblitz: nền tảng giúp tạo và demo nhanh dự án, tiện khi cần gửi code cho ai đó
-
-
-
 # SS performance
 Rust tốn ít bộ nhớ và tốc độ nhanh hơn Go. Zig > Rust > Go > Bun > Deno > NodeJS nhưng Zig là ngôn ngữ bậc thấp quá nên k dùng.
 Go > C#
@@ -134,5 +130,8 @@ URL: https://www.youtube.com/watch?v=USQ_UZVw5rY
 
 -> Series discovering hidden API hay nhưng k thực tiễn: hướng dẫn tìm ra các API ẩn trong website, có thể dùng nó để hack mở khóa các page ẩn thông tin hay trả phí để xem thông tin. URL: https://www.youtube.com/watch?v=twuhocLtGCg&list=PLyb_C2HpOQSCAi67ZF0w-6CvCvZs_OXAB&index=1
 
--> VD: https://www.youtube.com/watch?v=aBVF-3NE_1Q => setup firebase authen, db, storage, algolia, deploy vercel app
+-> VD: https://www.youtube.com/watch?v=aBVF-3NE_1Q => setup app kompad dùng firebase authen, db, storage, algolia, deploy vercel app
+
+-> https://now.hackertab.dev/ 
+https://daily.dev/
 
