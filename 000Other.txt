@@ -116,6 +116,12 @@ Performance test có acceptance criteria cụ thể. VD query dynamic content k 
 
 
 
+# React Native
+Android trước phải học java, kotlin, bộ android sdk code trên Android Studio. iOS thì phải học Swift và Objective-C code trên XCode. Bh học React-Native là xong.
+Expo là package tạo dự án react native và chạy mô phỏng điện thoại luôn.
+
+
+
 # Other:
 -> Fintech: là finance và technology, công nghệ tài chính. Là việc sáng tạo công nghệ ứng dụng trong các dịch vụ tài chính. Từ này xuất hiện khi IT dần xâm lấn vào các hệ thống tiền tệ.
 
