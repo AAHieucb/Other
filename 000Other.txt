@@ -34,27 +34,6 @@ LAMP: Linux, Apache, MySQL, PHP => kbh dùng
 
 
 
-# Tính năng của VSC
--> Forwarding port
-Mục ports cạnh terminal, dùng DevTunnel để forwarding port local ra ngoài internet nhanh
-
--> Cách search trong node_modules bằng VSC
-Vào user settings tìm search exclude: xóa **/node_modules đi
-Nếu chỉ tìm node_modules theo tên file thì nên dùng extension Find in node_modules
-
--> https://www.xda-developers.com/how-use-gpu-visual-studio-code/
-Dùng GPU cho VSC giúp tốc độ của VSC tăng cao đặc biệt khi liên quan đến các tác vụ render
-
--> URL tổng hợp phím tắt của VSC: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-CTRL + T => search biến và hàm trong code
-CTRL + D => multiple select
-CTRL + SHIFT + L => multiple select all
-CTRL + B 
-
--> Open simple browser
-
-
-
 # Biến gg drive thành streaming server phim
 Các web làm phim phải bỏ ra lượng tiền lớn để thuê streaming server cho video. Ta có thể tận dụng gg drive làm streaming server lưu phim.
 
@@ -75,6 +54,9 @@ Mã code mọi phần trong hệ thống lưu chung 1 repo. Nó khác với ki�
 => Có ưu và nhược điểm riêng, best case thì chỉ nên dùng monorepo khi các phần trong dự án chạy cùng 1 ngôn ngữ hoặc cần chạy cùng với nhau.
 VD mỗi khi code cần chạy song song UI và server thì nên gom chung 1 repo thay vì tạo 2 repo. Ví dụ pull code về là có bản mới nhất của cả FE BE luôn.
 VD các thư viện, SDK dùng trong dự án mà tái sử dụng ở các dự án khác thì nên tách nó ở repo riêng.
+
+-> turbo: là 1 loại giống lerna và nx, nhưng turbo đạt tốc độ vượt trội, chuyên về cache và scheduling task, quản lý monorepo.
+VD khi dùng nhiều dự án react trong 1 monorepo thì dùng turbo build nhanh hơn, còn khi có 1 dự án đơn lẻ thì dùng webpack bth ok.
 
 
 
@@ -138,6 +120,5 @@ URL: https://www.youtube.com/watch?v=USQ_UZVw5rY
 
 -> VD: https://www.youtube.com/watch?v=aBVF-3NE_1Q => setup app kompad dùng firebase authen, db, storage, algolia, deploy vercel app
 
--> https://now.hackertab.dev/ 
-https://daily.dev/
+-> 2FA: Bảo mật 2 bước, lấy mã từ gmail hoặc ứng dụng sinh mã đổi liên tục. VD authenticator
 

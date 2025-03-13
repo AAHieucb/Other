@@ -1,3 +1,12 @@
+# Tấn công NTP 
+Tấn công NTP là 1 loại của DDoS
+NTP Flood(NTP Amplification) Network Time Protocol là 1 giao thức mạng lâu đời đồng bộ hóa thời gian giữa các hệ thống điện tử. Kiểu tấn công này sẽ khai thác lỗ hổng các máy chủ NTP có thể truy cập công khai để làm quá tải mạng đích với số lượng lớn các gói UDP.
+Giao thức này thiết kế ra để tránh ảnh hưởng đến độ trễ biến đổi bằng cách sử dụng bộ đệm fitter.
+
+
+
+
+
 #***Cơ chế quản lý tốc độ mạng
 Khi thực hiện cuộc gọi VoIP, giọng nói được mã hóa và truyền đi, trong quá trình truyền tin, nó cạnh tranh với các lưu lượng truy cập khác trong mạng của ta, tất cả các dữ liệu này đều tốn đến tài nguyên mạng. Nhưng trong các TH quan trọng, ta cần ưu tiên mạng cho các dịch vụ cụ thể, nên cần cài đặt QoS để giảm ngẽn mạng cho các dịch vụ đó
 

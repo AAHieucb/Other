@@ -1,10 +1,8 @@
 # Ignore
 
--> Winform
-Winform là 1 phần của .NET Framework cung hỗ trợ phát triển app giao diện người dùng cho desktop, laptop và tablet.
+-> Winform: là 1 phần của .NET Framework cung hỗ trợ phát triển app giao diện người dùng cho desktop, laptop và tablet.
 
--> Dialogflow
-Nền tảng giúp tạo chatbot trả lời tự động cho các ứng dụng như facebook, telegram, discord 
+-> Dialogflow: Nền tảng giúp tạo chatbot trả lời tự động cho các ứng dụng như facebook, telegram, discord 
 
 -> Flutter
 Flutter phù hợp với các ứng dụng focus về animation, layout phức tạp. React Native cũng cross-platform nhưng animation làm vất vả hơn, dù hiện tại đã có ThreeJS khiến mảng animation của React trở nên cực kỳ mạnh. 
@@ -16,15 +14,13 @@ Flutter back bởi GG dùng JS, còn RN back bởi Facebook dùng Dart.
 Hook là 1 cơ chế dùng để chắn ngang các lời gọi hàm, sự kiện trước khi nó đến một ứng dụng. Từ đó có thể sửa đổi theo ý ta, như thêm or đổi chức năng của ứng dụng. Lập trình hook có thể tùy chỉnh điều này. Nó là 1 kỹ thuật trong lập trình win32
 Win32 là viết tắt cho cụm từ Windows 32-bit, Win32 API cung cấp cho ta một số lượng hàm, thủ tục nhất định để ta dễ dàng tạo ra một chương trình window theo ý muốn
 
--> Autocad
-Phần mêm vẽ kỹ thuật bằng đồ họa vector trong kiến trúc, có thể vẽ cấu trúc 3d tòa nhà hay các thứ
+-> Autocad: Phần mêm vẽ kỹ thuật bằng đồ họa vector trong kiến trúc, có thể vẽ cấu trúc 3d tòa nhà hay các thứ
 
--> WebGL
-Có thể sẽ không bao giờ đụng vì nó giúp code front end nhưng ở tầng level quá thấp nên rất phức tạp. Nó là thứ giúp tương tác với GPU để render đồ họa cao, bao gồm 3D model và các hiệu ứng cực đẹp.
+-> WebGL: Có thể sẽ không bao giờ đụng vì nó giúp code front end nhưng ở tầng level quá thấp nên rất phức tạp. Nó là thứ giúp tương tác với GPU để render đồ họa cao, bao gồm 3D model và các hiệu ứng cực đẹp.
 
 -> WebGPU: 1 phiên bản mới hoàn hảo hơn kế thừa từ WebGL. Mạnh hơn, nhanh hơn và tốt hơn.
 
--> Laravel là 1 framework của PHP làm web phổ biến nhất theo mẫu MVC. Code được giảm thiểu nhưng vẫn đạt tiêu chuẩn giúp tiết kiệm tg. Nói đến PHP thg nói đến kèm với Laravel.
+-> Laravel: là 1 framework của PHP làm web phổ biến nhất theo mẫu MVC. Code được giảm thiểu nhưng vẫn đạt tiêu chuẩn giúp tiết kiệm tg. Nói đến PHP thg nói đến kèm với Laravel.
 
 -> Angular, Vue: Các framework JS FE chỉ học nếu thực sự có nhu cầu công ty yêu cầu dùng
 
@@ -32,7 +28,7 @@ Có thể sẽ không bao giờ đụng vì nó giúp code front end nhưng ở 
 Ta có thể thêm các thuộc tính ngay trong tag htmx thực hiện actions mà k cần code JS riêng. Ban đầu cũng là SSR gửi đến trình duyệt, rồi nó dùng CSR để thay đổi html bằng JS được tích hợp ngay trong tag. 
 K cần quản lý tạng thái các thứ, k cần dùng webpack. Kích thước nhẹ hơn React. Htmx k chia component như React nên khó khăn trong việc tái sử dụng. 
 
--> Bardeen là extension giúp tạo automation thực hiện 1 chuỗi hành động trên các nền tảng gg drive, tele, openai,.... Có thể dùng các automation có sẵn làm đủ thứ để kp làm thủ công combination giữa nhiều ứng dụng với nhau
+-> Bardeen: là extension giúp tạo automation thực hiện 1 chuỗi hành động trên các nền tảng gg drive, tele, openai,.... Có thể dùng các automation có sẵn làm đủ thứ để kp làm thủ công combination giữa nhiều ứng dụng với nhau
 
 -> Phaser: là 1 framework HTML5 để làm game trên web. Nó dùng Pixi.js render trên WebGL và Canvas. Hỗ trợ cả mobile và desktop. 
 Điều đb là game phát triển bởi Phaser có thể dễ dạng biên thành ứng dụng cho iOS và Android. Code rất dễ với JS nhưng ta k làm game nên bỏ
@@ -59,9 +55,6 @@ Tính năng của nó là database được lưu ở edge, phân tán. Nó đư�
 -> Wasp: tool giúp phát triển ứng dụng NodeJS, ReactJS dễ hơn. Có thể visualize page và API, deploy dễ dàng.
 
 -> Azure cloud: phức tạp, chắc chắn theo hãng học
-
--> AWS cloud: phức tạp, chắc chắn theo hãng học
-Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng dụng của họ
 
 -> Google Cloud Platform: phức tạp
 
@@ -134,3 +127,22 @@ Nó có EC2 là cloud computer để ngừoi dùng thuê máy chủ chạy ứng
 -> Vaultwarden: giống bitwarden nhưng cài và chạy với docker ok
 
 -> Caddy webserver: thay thế nginx nhưng cấu hình dễ hơn, nếu k cần rules quá phức tạp thì dùng caddy webserver ok. Cài qua docker ok.
+
+-> CloudNativePG là một operator hỗ trợ triển khai, quản lý và vận hành các cụm PostgreSQL trên nền tảng Kubernetes. Chỉ dùng để quản lý khi scale postgre quy mô lớn.
+Nó giúp các tác vụ như nâng cấp, sao lưu, khôi phục, tự động xử lý sự cố, failover hoặc phát hiện lỗi.
+
+-> Cloud Foundry Marketplace (PaaS) là 1 nền tảng giúp tìm kiếm và tích hợp các dịch vụ như cơ sở dữ liệu, dịch vụ lưu trữ, dịch vụ giám sát, hoặc API vào ứng dụng của mình dưới dạng các service plans (ví dụ: PostgreSQL, RabbitMQ, Redis). Dev có thể tự thêm, cấu hình, và quản lý các dịch vụ này.
+Korifi là 1 dự án mã nguồn mở của Cloud Foundry, mang lại khả năng tương tự Cloud Foundry nhưng hoạt động trên Kubernetes.
+Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k cần sự hỗ trợ từ đội ngũ vận hành, tự tạo db trên nền tảng đó, tự kết nối tự phục vụ thôi.
+
+-> CapacitorJS: là tool biến ứng dụng web thành ứng dụng di động native (iOS, Android) mà không cần viết lại toàn bộ bằng Swift, Kotlin hay Java. Nó đóng gói web thành mobile app bằng cách sử dụng webview để hiển thị web. Đồng thời cung các plugin để bạn truy cập được các tính năng của thiết bị (như camera, GPS, thông báo) thông qua JavaScript.
+
+-> Prisma: công cụ connect và tương tác với db dành cho nodejs rất mạnh, có prisma studio xem giao diện. Có thể chạy command sinh model từ db, hay tạo db từ model tự định nghĩa
+
+-> Sentry: công cụ giám sát lỗi, theo dõi hiệu suất, debug ứng dụng, dùng cho react, next ok.
+
+-> Shiki là npm package for syntax highlighter. VD hiển thị code JS trên màn hình và muốn highlight
+
+-> Digital Ocean đám mây có đủ mọi thứ như OS, k8s.
+
+
