@@ -137,7 +137,7 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> CapacitorJS: là tool biến ứng dụng web thành ứng dụng di động native (iOS, Android) mà không cần viết lại toàn bộ bằng Swift, Kotlin hay Java. Nó đóng gói web thành mobile app bằng cách sử dụng webview để hiển thị web. Đồng thời cung các plugin để bạn truy cập được các tính năng của thiết bị (như camera, GPS, thông báo) thông qua JavaScript.
 
--> Prisma: công cụ connect và tương tác với db dành cho nodejs rất mạnh, có prisma studio xem giao diện. Có thể chạy command sinh model từ db, hay tạo db từ model tự định nghĩa
+-> Prisma: công cụ connect và tương tác với db giống drizzle, có prisma studio xem giao diện. Có thể chạy command sinh model từ db, hay tạo db từ model tự định nghĩa.
 
 -> Sentry: công cụ giám sát lỗi, theo dõi hiệu suất, debug ứng dụng, dùng cho react, next ok.
 
@@ -145,4 +145,19 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> Digital Ocean đám mây có đủ mọi thứ như OS, k8s.
 
+-> restdb.io: tạo db để test ok, free.
+
+-> Fail2Ban: tool bảo mật server, monitor log file tìm ra malicious requests, failed login attempts, tự block ip vào firewall nếu thấy malicious pattern. Có docker container.
+
+-> Jellyfin: là library biến home server thành streaming đủ loại cực manh, access từ mọi device. Có docker container.
+
+-> Nextcloud: biến home server thành cloud platform như gg drive, dropbox nhưng toàn quyền kiểm soát, hỗ trợ sẵn hầu hết mọi feature của cloud. Có docker container.
+
+-> Home Assistant: docker container cho 1 platform quản lý smart home. Chỉ cần các thiết bị trong nhà hỗ trợ là có thể connect với app này để kiểm soát từ xa mọi thứ.
+
+-> Netdata: real-time performance monitoring tool, có docker container, track đủ mọi thứ của server luôn.
+
+-> Duplicati: docker container chạy trên home server. Tool chuyên backs up files vào local storage or cloud or chia sẻ qua mạng, encrypt file và đủ thứ.
+
+-> Joomla: CMS tạo web nhưng nhỏ hơn wordpress
 
