@@ -69,6 +69,7 @@ Tính năng của nó là database được lưu ở edge, phân tán. Nó đư�
 -> GitGuardian: tool quét mã nguồn và tìm commit chứa thông tin nhạy cảm như API keys, mật khẩu, tokens bị push nhầm lên public repo.
 
 -> Remix Run: 1 loại framework fullstack dùng tạo React CSR hay SSR đều được, như NextJS. Phù hợp ứng dụng hiệu suất cao, data phức tạp, trải nghiệm mượt mà.
+Có các adapters, mỗi adapters giúp remix chạy với 1 nền tảng khác nhau như express, vercel, cloudflare, aws lambda.
 
 -> Fileforge: cung cấp service liên quan đến xử lý tệp. VD có thể chuyển HTML thành PDF file thông qua thư viện nó cung sẵn @fileforge/react-print và @fileforge/client
 
@@ -160,4 +161,9 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 -> Duplicati: docker container chạy trên home server. Tool chuyên backs up files vào local storage or cloud or chia sẻ qua mạng, encrypt file và đủ thứ.
 
 -> Joomla: CMS tạo web nhưng nhỏ hơn wordpress
+
+-> Hono server: framework siêu nhẹ cho JS tối ưu cho edge computing và serverless. Như kiểu expressjs nhưng dùng cho api nhỏ gọn, chạy trên edge hoặc microservice.
+
+-> Vinxi: package npm cho nodejs chuyên tạo proxy chuyển tiếp api nội bộ hoặc external api, hỗ trợ cả load balancing, caching, middleware.
+
 
