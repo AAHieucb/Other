@@ -166,4 +166,5 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> Vinxi: package npm cho nodejs chuyên tạo proxy chuyển tiếp api nội bộ hoặc external api, hỗ trợ cả load balancing, caching, middleware.
 
+-> @ai-sdk của vercel rất mạnh giúp xây dựng ứng dụng AI, có thể tích hợp vào nextjs.
 
