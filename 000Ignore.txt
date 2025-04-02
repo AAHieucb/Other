@@ -168,3 +168,8 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> @ai-sdk của vercel rất mạnh giúp xây dựng ứng dụng AI, có thể tích hợp vào nextjs.
 
+-> NueJS: standards web framework có thể tạo web cực nhẹ, cả web chỉ nhẹ bằng 1 cái nút bấm.
+
+-> wrk: a HTTP benchmarking tool cũ rồi
+
+-> uploadthing: thay thế S3 trong việc upload file
