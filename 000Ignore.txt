@@ -173,3 +173,7 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 -> wrk: a HTTP benchmarking tool cũ rồi
 
 -> uploadthing: thay thế S3 trong việc upload file
+
+-> RustDesk: free opensource thay thế tốt nhất cho team viewer
+
+
