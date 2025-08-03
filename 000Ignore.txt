@@ -138,8 +138,6 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> CapacitorJS: là tool biến ứng dụng web thành ứng dụng di động native (iOS, Android) mà không cần viết lại toàn bộ bằng Swift, Kotlin hay Java. Nó đóng gói web thành mobile app bằng cách sử dụng webview để hiển thị web. Đồng thời cung các plugin để bạn truy cập được các tính năng của thiết bị (như camera, GPS, thông báo) thông qua JavaScript.
 
--> Prisma: công cụ connect và tương tác với db giống drizzle, có prisma studio xem giao diện. Có thể chạy command sinh model từ db, hay tạo db từ model tự định nghĩa.
-
 -> Sentry: công cụ giám sát lỗi, theo dõi hiệu suất, debug ứng dụng, dùng cho react, next ok.
 
 -> Shiki là npm package for syntax highlighter. VD hiển thị code JS trên màn hình và muốn highlight
@@ -176,4 +174,15 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> RustDesk: free opensource thay thế tốt nhất cho team viewer
 
+-> esp.aptrinsic.com: giúp thu thập hành vi người dùng, thu thập đến từng vị trí bấm nút trên màn hình
 
+-> Prisma: tool ORM tương tác với db, có prisma studio xem giao diện. Có thể chạy command sinh model từ db, hay tạo db từ model tự định nghĩa. Thay bằng drizzle.
+
+-> Base44: AI vibe coding
+
+-> https://www.autoregex.xyz/ => tool sinh regexp bằng AI từ english words, chat gpt cũng làm được mà
+
+-> Github copilot: có thể setup tự động review code dựa trên pull requests. 
+Bản pro có thể setup copilot agent tự động chỉnh sửa code theo yêu cầu và tạo MR, xong ta review để merge. Như có thêm dev.
+
+-> CodeRabbit: Tool có thể setup review code từng commit trên VSC 

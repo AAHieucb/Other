@@ -122,3 +122,5 @@ URL: https://www.youtube.com/watch?v=USQ_UZVw5rY
 
 -> 2FA: Bảo mật 2 bước, lấy mã từ gmail hoặc ứng dụng sinh mã đổi liên tục. VD authenticator
 
+-> Guid là unique, dùng để sinh random string cũng được nhưng hơi thừa. VD sinh random từ 1-1000 thì guid k làm được.
+
