@@ -22,9 +22,22 @@ Chỉ cần đăng ký và add tên miền website vào là được. Nên dùng
 
 -> inngest: xử lý background jobs, event, queue. 50K execution 1 tháng, 5 concurrent step.
 
--> Prisma data platform: 100,000 operations* included
-500 MB storage
-5 databases
-No credit card required
--> Drizzle
--> Vercel
+-> Prisma data platform: prisma là ORM free nhưng có cloud cung db postgre
+Free 100K operation, 500 MB storage, 5 databases, no credit card required
+
+-> Github copilot: free 50 chat, 2K auto complete, review code.
+
+-> Sonar scan: Free cloud hỗ trợ scan code tìm bug và vulnerables.
+
+-> Cursor: ai code free, vibe coding
+
+-> Github pages: deploy FE static site free.
+Source repo limit 1GB, published site limit 1GB, deployment timeout nếu quá 10p, bandwidth 100GB/month, limit 10 builds/hour trừ khi dùng github action workflow, có sẵn rate limit và cache chống DDoS. K thể trả phí để có nhiều hơn.
+
+-> Netlify: hỗ trợ đa dạng static site, nextjs. 
+Limit 100GB băng thông 1 tháng, 300p build.
+
+-> Vercel: hosting đa dạng
+Kích thước max 100MB source code files. Bản free Hobby max 45p build time mỗi lần, max 6000p build mỗi tháng, serverless function thực thi tối đa trong 60s, limit 100 GB cho Fast Data Transfer và 10 GB cho Fast Origin Transfer
+
+

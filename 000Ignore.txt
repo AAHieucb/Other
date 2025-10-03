@@ -183,8 +183,6 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> Base44: AI vibe coding
 
--> https://www.autoregex.xyz/ => tool sinh regexp bằng AI từ english words, chat gpt cũng làm được mà
-
 -> Github copilot: có thể setup tự động review code dựa trên pull requests. 
 Bản pro có thể setup copilot agent tự động chỉnh sửa code theo yêu cầu và tạo MR, xong ta review để merge. Như có thêm dev.
 
