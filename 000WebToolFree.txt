@@ -1,0 +1,30 @@
+-> Supabase: cloud database, authen, file blob, websocket, serverless edge function. Tương thích nextjs.
+Free 500 MB database size, 500 MB RAM, 10GB băng thông, 1 GB file storage
+
+-> Turso: 1 phiên bản sql hỗ trợ các tính năng đơn giản và nhẹ hơn, scale cloud edge tốc độ cao, mạnh hơn SQLite nhưng yếu hơn mysql.
+Free 100 db, 5GB storage, 500M lần reads và 10M writes 1 tháng, Point-In-Time Restore khôi phục trạng thái về quá khứ trong phạm vi 1 day
+
+-> Azure cloud: Bản free có thể dùng S3 và vài feature cơ bản
+
+-> Google Cloud Platform: bản free có thể dùng mail service và vài tính năng cơ bản
+
+-> Firebase: bản free hỗ trợ authen, hosting static web, websocket, nosql db, blob storage, analytics.
+50K request authen 1 tháng, hosting 10GB, blob file 5GB, db 1GB.
+
+-> Cloudflare: dùng để tối ưu hosting cho web, bản free vẫn hỗ trợ hosting web tĩnh, dùng CDN, HTTPs, bảo vệ DDoS, firewall. 
+Chỉ cần đăng ký và add tên miền website vào là được. Nên dùng cloudflare khi web có lưu lượng cao, nội dung tĩnh nhiều, người dùng toàn cầu, chống DDoS.
+
+-> Fail2Ban: tool bảo mật chặn xâm nhập. VD user login failed thì log ra 1 file, dùng tool này theo dõi log nếu login failed 3 lần liên tục thì trigger chặn ip hay khoá user.
+
+-> uploadthing: Blob storage free 2GB
+
+-> resend: support gửi mail, free 3K mail 1 tháng, 100 mail 1 ngày
+
+-> inngest: xử lý background jobs, event, queue. 50K execution 1 tháng, 5 concurrent step.
+
+-> Prisma data platform: 100,000 operations* included
+500 MB storage
+5 databases
+No credit card required
+-> Drizzle
+-> Vercel

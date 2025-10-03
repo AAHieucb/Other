@@ -4,8 +4,7 @@
 
 -> Dialogflow: Nền tảng giúp tạo chatbot trả lời tự động cho các ứng dụng như facebook, telegram, discord 
 
--> Flutter
-Flutter phù hợp với các ứng dụng focus về animation, layout phức tạp. React Native cũng cross-platform nhưng animation làm vất vả hơn, dù hiện tại đã có ThreeJS khiến mảng animation của React trở nên cực kỳ mạnh. 
+-> Flutter: phù hợp với các ứng dụng focus về animation, layout phức tạp. React Native cũng cross-platform nhưng animation làm vất vả hơn, dù hiện tại đã có ThreeJS khiến mảng animation của React trở nên cực kỳ mạnh. 
 Flutter back bởi GG dùng JS, còn RN back bởi Facebook dùng Dart.
 
 -> Ionic Framework: 1 framework phát triển ứng dụng mobile đa nền tảng. Giống React Native
@@ -28,7 +27,7 @@ Win32 là viết tắt cho cụm từ Windows 32-bit, Win32 API cung cấp cho t
 Ta có thể thêm các thuộc tính ngay trong tag htmx thực hiện actions mà k cần code JS riêng. Ban đầu cũng là SSR gửi đến trình duyệt, rồi nó dùng CSR để thay đổi html bằng JS được tích hợp ngay trong tag. 
 K cần quản lý tạng thái các thứ, k cần dùng webpack. Kích thước nhẹ hơn React. Htmx k chia component như React nên khó khăn trong việc tái sử dụng. 
 
--> Bardeen: là extension giúp tạo automation thực hiện 1 chuỗi hành động trên các nền tảng gg drive, tele, openai,.... Có thể dùng các automation có sẵn làm đủ thứ để kp làm thủ công combination giữa nhiều ứng dụng với nhau
+-> Bardeen: là extension giúp tạo automation thực hiện 1 chuỗi hành động trên các nền tảng gg drive, tele, openai,.... Có thể dùng các automation có sẵn làm đủ thứ để kp làm thủ công combination giữa nhiều ứng dụng với nhau. K free.
 
 -> Phaser: là 1 framework HTML5 để làm game trên web. Nó dùng Pixi.js render trên WebGL và Canvas. Hỗ trợ cả mobile và desktop. 
 Điều đb là game phát triển bởi Phaser có thể dễ dạng biên thành ứng dụng cho iOS và Android. Code rất dễ với JS nhưng ta k làm game nên bỏ
@@ -46,13 +45,13 @@ Supabase cung cấp các dịch vụ đám mây như cơ sở dữ liệu, xác 
 -> tRPC: 1 thư viện API cực mạnh của JS giúp viết API, xây dựng web mà k cần REST API hay GraphQL. Nó cho phép tạo ra các hàm trên server và gọi trực tiếp từ client như thể chúng định nghĩa trên client. 
 Kết hợp với Typescript, nó typesafe và nếu ta đổi 1 trường trong API phía server thì client sẽ báo lỗi đúng dòng tương ứng. Nếu ta làm fullstack cho nó sẽ rất tuyệt vì tốc độ xây dựng nhanh, chứ bth server sửa 1 trường xong phải báo team client sửa theo sẽ rất mất tg.
 
--> Turso: database nosql có thể xử lý lượng lớn data hiệu quả, dựa trên libSQL (1 nhánh mã nguồn mở của SQLite). Nó chỉ hỗ trợ các kiểu cơ bản như số chuỗi, ngày tháng, .
-Tính năng của nó là database được lưu ở edge, phân tán. Nó được thiết kế để giảm trễ cho truy vấn từ bất kỳ nơi nào trên thế giới. Đó gọi là các edge functions được cung cấp bởi các nền tảng đám mây như Vercel, CloudFlare bằng cách lấy data ở gần hơn về mặt địa lý 
+-> Turso: database sql có thể xử lý lượng lớn data hiệu quả, fork của libSQL (1 nhánh mã nguồn mở của SQLite). Nó chỉ hỗ trợ các kiểu cơ bản như số chuỗi, ngày tháng, .
+Tính năng của nó là database được lưu ở edge cloud, phân tán. Nó được thiết kế để giảm trễ cho truy vấn từ bất kỳ nơi nào trên thế giới. Đó gọi là các edge functions được cung cấp bởi các nền tảng đám mây như Vercel, CloudFlare bằng cách lấy data ở gần hơn về mặt địa lý. Khác với SQLite phải tự built local.
 => Cơ chế hoạt động giống như Edge Computing là 1 mô hình tính toán phân tán cho phép các thiết bị ở xa xử lý dữ liệu gần với nơi dữ liệu được tạo ra. Nó là 1 từ chung nhưng mô hình này có thể kết hợp với các nền tảng đám mây để triển khai các ứng dụng ở cạnh (edge) mạng.
 
 -> WinterJS: là một runtime JavaScript siêu nhanh, tương tự như Node.js. Được viết bằng Rust, dùng JS engine SpiderMonkey để thực thi JS. Có thể biên dịch ra Web Assembly hoàn toàn, tốc độ nhanh hơn cả Bun.
 
--> Wasp: tool giúp phát triển ứng dụng NodeJS, ReactJS dễ hơn. Có thể visualize page và API, deploy dễ dàng.
+-> Wasp: Bth khi phát triển ứng dụng ta phải setup React (frontend) + Express (backend) + Prisma (DB) + Auth + Routing + Deploy script. Dùng wasp thì viết 1 file config, nó gen hết ra boilerplate, ta chỉ cần code logic chính từng phần và chạy 1 lệnh để deploy.
 
 -> Azure cloud: phức tạp, chắc chắn theo hãng học
 
@@ -91,9 +90,9 @@ Có các adapters, mỗi adapters giúp remix chạy với 1 nền tảng khác 
 
 -> Fastlane: tương tự nhưng chuyên CI cho ứng dụng mobile.
 
--> Neo4j là một hệ quản trị cơ sở dữ liệu đồ thị open source.
+-> Neo4j: là một hệ quản trị cơ sở dữ liệu đồ thị open source.
 
--> Cypress cũng là 1 frontend testing tool
+-> Cypress: cũng là 1 frontend testing tool
 
 -> Bun > NodeJS ~ C# vì dùng engine JavascriptCore của Safari nhanh hơn V8 Engine của nodejs. Bun được viết bằng Ziglang là một ngôn ngữ bậc thấp.
 
@@ -107,13 +106,13 @@ Có các adapters, mỗi adapters giúp remix chạy với 1 nền tảng khác 
 
 -> Tauri 2.0: framework giúp xây ứng dụng mobile desktop bằng công nghệ web. VD ta dùng vite + tauri tạo UI app desktop tương thích mọi OS và dùng Rust làm BE ok.
 
--> Tiptap: framework dùng tạo text editor cực mạnh. Nó đa dạng và cân nhiều loại text editor phức tạp. Dùng cho React ok.
+-> Tiptap: framework dùng tạo text editor cực mạnh. Nó đa dạng và cân nhiều loại text editor phức tạp. Dùng cho React ok. Mất phí.
 
 -> Algolia: cung cấp dịch vụ tìm kiếm mạnh, hỗ trợ nh kiểu phức tạp. VD ốp data lên cho nó index r query full text search luôn. Hỗ trợ sẵn AI đưa ra gợi ý search, autocomplete, ranking.
 
 -> LangChain: framework xây dựng ứng dụng dựa trên LLM.
 
--> KolibriOS là hđh viết hoàn toàn bằng assembly cực nhẹ nhưng vẫn cung cấp các tính năng đầy đủ của 1 OS.
+-> KolibriOS: hđh viết hoàn toàn bằng assembly cực nhẹ nhưng vẫn cung cấp các tính năng đầy đủ của 1 OS.
 
 -> Selenium: automation tool cho browser, có thể setup tự động mở browser điền form ấn nút các thứ để kiểm thử cho nhanh. Viết code bằng JS or Python.
 
@@ -170,11 +169,15 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 
 -> wrk: a HTTP benchmarking tool cũ rồi
 
--> uploadthing: thay thế S3 trong việc upload file
+-> uploadthing: thay thế S3 trong việc upload file, có 2GB free
+
+-> resend: package gửi mail, free 3K mail 1 tháng, 100 mail 1 ngày
+
+-> inngest: package xử lý background jobs, event, queue. 50K execution 1 tháng, 5 concurrent step. Đăng ký function và trigger khi có event thôi.
 
 -> RustDesk: free opensource thay thế tốt nhất cho team viewer
 
--> esp.aptrinsic.com: giúp thu thập hành vi người dùng, thu thập đến từng vị trí bấm nút trên màn hình
+-> Aptrinsic / Gainsight PX: giúp thu thập hành vi người dùng, thu thập đến từng vị trí bấm nút trên màn hình
 
 -> Prisma: tool ORM tương tác với db, có prisma studio xem giao diện. Có thể chạy command sinh model từ db, hay tạo db từ model tự định nghĩa. Thay bằng drizzle.
 
@@ -186,3 +189,14 @@ Nó theo mô hình self-service, tức là ngừoi dùng tự phục vụ mà k 
 Bản pro có thể setup copilot agent tự động chỉnh sửa code theo yêu cầu và tạo MR, xong ta review để merge. Như có thêm dev.
 
 -> CodeRabbit: Tool có thể setup review code từng commit trên VSC 
+
+-> Neo.mjs: 1 framework FE chuyên multi-thread, k cần bundler, tốc độ cao như 1 app desktop, data cực lớn và update nhiều cũng k sợ lag.
+
+-> Sonar: Tự động check security bug và lỗi basic trong hệ thống
+
+-> Penpot: tool design web, có AI plugin
+
+-> Better Auth: authentication lib open source free rất mạnh. Hỗ trợ đủ 2FA, multi-tenancy, multi-session SSO.
+
+-> Github Spark: tool vibe code của github khá mạnh
+
