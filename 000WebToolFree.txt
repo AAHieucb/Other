@@ -39,5 +39,3 @@ Limit 100GB băng thông 1 tháng, 300p build.
 
 -> Vercel: hosting đa dạng
 Kích thước max 100MB source code files. Bản free Hobby max 45p build time mỗi lần, max 6000p build mỗi tháng, serverless function thực thi tối đa trong 60s, limit 100 GB cho Fast Data Transfer và 10 GB cho Fast Origin Transfer
-
-

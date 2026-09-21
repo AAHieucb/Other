@@ -106,6 +106,7 @@ Expo là package tạo dự án react native và chạy mô phỏng điện tho�
 
 # MCP server
 Là 1 server cung cấp cho AI truy cập vào database, file và các thứ bên ngoài để thực hiện chức năng cụ thể.
+VD có thể điều khiển AI vào chrome và bật 1 video cụ thể bằng MCP của chrome dev tool
 
 
 
