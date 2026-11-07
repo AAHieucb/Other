@@ -104,12 +104,6 @@ Expo là package tạo dự án react native và chạy mô phỏng điện tho�
 
 
 
-# MCP server
-Là 1 server cung cấp cho AI truy cập vào database, file và các thứ bên ngoài để thực hiện chức năng cụ thể.
-VD có thể điều khiển AI vào chrome và bật 1 video cụ thể bằng MCP của chrome dev tool
-
-
-
 # Other:
 -> Fintech: là finance và technology, công nghệ tài chính. Là việc sáng tạo công nghệ ứng dụng trong các dịch vụ tài chính. Từ này xuất hiện khi IT dần xâm lấn vào các hệ thống tiền tệ.
 
